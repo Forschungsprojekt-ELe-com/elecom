@@ -1,0 +1,36 @@
+<!-- BEGIN footer_perm_url -->
+<div class="il-footer-permanent-url" onclick="selectPermalink();">
+	{PERMA_LINK_LABEL} <span class="glyphicon glyphicon-link"></span>
+	<input id="current_perma_link" type="text" value="{PERMANENT_URL}" readonly="readOnly">
+</div>
+<!-- END footer_perm_url -->
+<div class="il-maincontrols-footer">
+	<div class="il-footer-content">
+		<div class="il-footer-text">
+			{TEXT}
+		</div>
+		<!-- BEGIN footer_links -->
+		<div class="il-footer-links">
+			{LINKS}
+		</div>
+		<!-- END footer_links -->
+	</div>
+	<!-- BEGIN footer_modals -->
+	<div class="il-footer-modals">{MODALS}</div>
+	<!-- END footer_modals -->
+</div>
+<script>
+    il.Util.addOnLoad(function() {
+        if ($("#current_perma_link").length) {
+            var input_size = Math.min(Math.floor((screen.width - 37) / 6) - 1, $("#current_perma_link").val().length);
+            $("#current_perma_link").attr("size", input_size);
+        }
+    });
+    function selectPermalink() {
+        var pl = $("#current_perma_link");
+        pl.attr("readOnly", false);
+        pl.focus().select();
+        document.execCommand('copy');
+        pl.attr("readOnly", true);
+    }
+</script>

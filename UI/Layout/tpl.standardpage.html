@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="{LANGUAGE}" dir="{TEXT_DIRECTION}">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="./Customizing/global/skin/elecom/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./Customizing/global/skin/elecom/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./Customizing/global/skin/elecom/images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="./Customizing/global/skin/elecom/images/favicons/site.webmanifest">
+	<link rel="mask-icon" href="./Customizing/global/skin/elecom/images/favicons/safari-pinned-tab.svg" color="#0164f4">
+	<link rel="shortcut icon" href="./Customizing/global/skin/elecom/images/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#0f3f75">
+	<meta name="msapplication-config" content="./Customizing/global/skin/elecom/images/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- BEGIN base -->
+	<base href="{BASE}" />
+	<!-- END base -->
+	
+	<title>{SHORT_TITLE}: {VIEW_TITLE}</title>
+	
+	<style>
+        {CSS_INLINE}
+	</style>
+	
+	
+	<!-- BEGIN css_file -->
+	<link rel="stylesheet" type="text/css" href="{CSS_FILE}" />
+	<!-- END css_file -->
+	
+	<!-- BEGIN js_file -->
+	<script src="{JS_FILE}"></script>
+	<!-- END js_file -->
+	
+	<!-- BEGIN meta_datum -->
+	<meta name="{META_KEY}" content="{META_VALUE}" />
+	<!-- END meta_datum -->
+	
+</head>
+
+<body>
+<div class="il-layout-page<!-- BEGIN slates_engaged --> with-mainbar-slates-engaged<!-- END slates_engaged -->">
+	<header>
+		<div class="header-inner">
+			<div class="il-logo">
+				{LOGO}
+				<div class="il-pagetitle">
+					{TITLE}
+				</div>
+			</div>
+			
+			<!-- BEGIN header_locator -->
+			<nav class="il-header-locator">{HEADER_BREADCRUMBS}</nav>
+			<!-- END header_locator -->
+			{METABAR}
+		</div>
+	</header>
+	
+	
+	<div class="il-system-infos">{SYSTEMINFOS}</div>
+	
+	<div class="nav il-maincontrols">{MAINBAR}</div>
+	
+	<!-- html5 main-tag is not supported in IE / div is needed -->
+	<main class="il-layout-page-content">
+		<div class="breadcrumbs">{BREADCRUMBS}</div>
+		<div>
+			<!-- BEGIN mode_info -->{MODEINFO}<!-- END mode_info -->
+			{CONTENT}
+		</div>
+		
+		<!-- BEGIN pagefooter -->
+		<footer role="contentinfo">
+			{FOOTER}
+		</footer>
+		<!-- END pagefooter -->
+	</main>
+</div>
+<script>
+	il.Util.addOnLoad(function() {
+<!-- BEGIN on_load_code -->
+    <!-- BEGIN on_load_code_inner -->
+        {OLCODE}
+    <!-- END on_load_code_inner -->
+<!-- END on_load_code -->
+        $(".breadcrumbs .crumb").each(function() {
+            $(this).attr("title", $(this).find("a").text());
+        });
+        $("div.il-maincontrols-mainbar button.btn-bulky img[src$='icon_fav.svg']").closest("button").addClass("favorite");
+        $('.h5p-iframe').contents().find("head").append($('<link rel="stylesheet" type="text/css" href="./Customizing/global/skin/elecom/elecom.css">'));
+	});
+</script>
+</body>
+</html>

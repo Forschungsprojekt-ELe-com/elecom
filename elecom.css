@@ -8937,7 +8937,7 @@ grid-based layout
 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   body {
-    background-image: url("images/HeaderIcon.svg");
+    background-image: url("../../templates/default/images/HeaderIcon.svg");
     background-position: center 43%;
     background-repeat: no-repeat;
     display: -ms-flexbox;
@@ -21125,7 +21125,9 @@ maincontrols-mainbar .btn-bulky > span.glyph,
 .btn.focus {
   color: #3a3a4a;
 }
-.btn-default {
+.btn-default,
+.btn-default:link,
+.btn-default:visited {
   color: white;
   background-color: #0164f4;
   border-color: #0164f4;
@@ -21331,6 +21333,7 @@ div.il-system-infos {
   }
 }
 .il-layout-page-content {
+  scroll-behavior: smooth;
   background-color: #ecf0f2;
   grid-column: 2;
   grid-row: 3;
@@ -21748,12 +21751,12 @@ div.il_ContainerListItem {
   margin: 0;
 }
 div.il_ContainerItemTitle {
+  padding-top: 6px;
   padding-bottom: 0;
 }
 div.il_ContainerItemTitle .il_ContainerItemTitle {
   padding: 0;
   margin: 0;
-  line-height: 35px;
 }
 div.ilListItemSection {
   margin-top: 0;
@@ -22197,10 +22200,16 @@ footer .il-maincontrols-footer {
 .panel .panel-heading.ilBlockHeader h4.ilBlockHeader {
   line-height: 24px;
 }
-a {
+a,
+a:link,
+a:visited {
+  color: #0274be;
   text-decoration: none;
 }
-a:hover {
+a:hover,
+a:focus,
+a:active,
+a:visited:hover {
   color: #4b4f58;
   text-decoration: none;
 }
@@ -22413,13 +22422,36 @@ a.ilRating:hover {
 .ilToolbar li .navbar-form > span,
 .ilToolbar li .navbar-text {
   line-height: 32px;
-  padding-right: 5px;
+  padding: 0 5px 0 10px;
 }
 .ilWhiteSpaceNowrap.ilRight a,
 .ilWhiteSpaceNowrap.ilRight .btn-group {
   vertical-align: top;
   border: 0 solid transparent;
   line-height: 24px;
+}
+.ilToolbarItems .ilToolbarGroup .navbar-form > span + input.btn {
+  display: block;
+}
+.ilSkillFilter .ilToolbar select.form-control {
+  display: inline;
+}
+.ilFormInnerCol {
+  display: inline;
+}
+.navbar-form .form-group.form-inline {
+  vertical-align: top;
+}
+.ilToolbarItems > li.ilToolbarGroup {
+  margin-bottom: 5px;
+}
+.ilToolbarItems > li.ilToolbarGroup > div.navbar-form {
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .ilToolbar li .navbar-form select.form-control {
+    width: 100%;
+  }
 }
 .h5p-content ul.h5p-actions {
   display: none;

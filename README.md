@@ -1,5 +1,5 @@
 # **Ilias 7.x Design für Ele-com**
-# **Kompiliert mit delos 7.14: bei abweichender ILIAS Version evtl. kompilieren lassen!**
+# **Kompiliert mit delos 7.17: bei abweichender ILIAS Version evtl. kompilieren lassen!**
 
 ### **Installation**
 
@@ -9,3 +9,4 @@
 
 ### **LOG**
 * 17.10.2022: Prototyp / Umsetzung. Kompiliert mit delos 7.14.
+* 09.01.2023: Kompiliert mit delos 7.17.

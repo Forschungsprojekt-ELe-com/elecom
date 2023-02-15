@@ -19794,6 +19794,12 @@ div.ilc_Page.readonly textarea[disabled] {
 #tst_output #tst_right h1.ilc_page_title_PageTitle {
   margin-bottom: 6px;
 }
+.dd-item {
+  font-size: 14px;
+}
+li.dd-item.ilc_qordli_OrderListItem > ul li.dd-item.ilc_qordli_OrderListItem {
+  border: 2px white solid;
+}
 .noMargin {
   margin: 0;
 }
@@ -21125,9 +21131,7 @@ maincontrols-mainbar .btn-bulky > span.glyph,
 .btn.focus {
   color: #3a3a4a;
 }
-.btn-default,
-.btn-default:link,
-.btn-default:visited {
+.btn-default {
   color: white;
   background-color: #0164f4;
   border-color: #0164f4;
@@ -22200,16 +22204,11 @@ footer .il-maincontrols-footer {
 .panel .panel-heading.ilBlockHeader h4.ilBlockHeader {
   line-height: 24px;
 }
-a,
-a:link,
-a:visited {
+a {
   color: #0274be;
   text-decoration: none;
 }
-a:hover,
-a:focus,
-a:active,
-a:visited:hover {
+a:hover {
   color: #4b4f58;
   text-decoration: none;
 }
@@ -22219,6 +22218,14 @@ a:visited:hover {
 }
 footer .il-footer-modals {
   text-align: left;
+}
+.il-maincontrols-footer .il-footer-modals a {
+  color: #0274be;
+  text-decoration: none;
+}
+.il-maincontrols-footer .il-footer-modals a:hover {
+  color: #4b4f58;
+  text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
   input[name^="position[blocks]"] {

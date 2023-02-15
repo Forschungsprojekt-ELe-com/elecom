@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template xmlns = "http://www.w3.org" responsible="Jean-Luc Braun" mail="braun@qualitus.de"
-          version="2"
-          name="ILIAS 7.17 - v2">
+          version="3"
+          name="ILIAS 7.18 - v3">
   <style id="elecom" name="Ele-com" image_directory="images" />
 </template>

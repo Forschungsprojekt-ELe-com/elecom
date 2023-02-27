@@ -11,3 +11,4 @@
 * 17.10.2022: Prototyp / Umsetzung. Kompiliert mit delos 7.14.
 * 09.01.2023: Kompiliert mit delos 7.17.
 * 15.02.2023: Kompiliert mit delos 7.18.
+* 27.02.2023: Anpassung.

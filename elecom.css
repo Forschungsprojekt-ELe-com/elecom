@@ -9209,7 +9209,7 @@ footer {
     -ms-grid-row: 3;
     grid-column: 1;
     grid-row: 3;
-    height: calc(55%);
+    height: calc(100% -  45px);
   }
   .il-layout-page.with-mainbar-slates-engaged .nav.il-maincontrols .il-maincontrols-mainbar {
     -ms-grid-columns: 1fr;
@@ -9360,7 +9360,7 @@ footer {
   .il-layout-page-content {
     display: flex;
     flex-direction: column;
-    min-height: calc(55vh);
+    min-height: calc(100vh -  45px);
     padding-bottom: 50px;
   }
   .il-layout-page-content > div {
@@ -17469,8 +17469,8 @@ div#il_startup_logo img {
 .qtip-default {
   font-size: 12px;
   line-height: 1.5;
-  background-color: #4c6586;
-  border-color: #4c6586;
+  background-color: #0164f4;
+  border-color: #0164f4;
   color: white;
   -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
@@ -22274,8 +22274,8 @@ footer .il-footer-modals {
   background-position: -15px 4px !important;
 }
 .qtip-default {
-  background-color: #4c6586 !important;
-  border-color: #4c6586 !important;
+  background-color: #0164f4 !important;
+  border-color: #0164f4 !important;
   color: white !important;
 }
 div.ilHeadAction img.ilRatingMarker {
@@ -22859,4 +22859,7 @@ div.il_HeaderInner {
 }
 .ilContainerBlockHeader {
   background-color: white;
+}
+.ilc_section_ElecomBlockWrapper h3.ilHeader {
+  display: none;
 }

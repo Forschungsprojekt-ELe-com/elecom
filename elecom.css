@@ -22863,3 +22863,142 @@ div.il_HeaderInner {
 .ilc_section_ElecomBlockWrapper h3.ilHeader {
   display: none;
 }
+.il_editarea div.ilc_section_TitelIconBasisAudio,
+.il_editarea_active div.ilc_section_TitelIconBasisAudio,
+.il_editarea_disabled div.ilc_section_TitelIconBasisAudio,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisAudio,
+.il_editarea div.ilc_section_TitelIconBasisText,
+.il_editarea_active div.ilc_section_TitelIconBasisText,
+.il_editarea_disabled div.ilc_section_TitelIconBasisText,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisText,
+.il_editarea div.ilc_section_TitelIconBasisVideo,
+.il_editarea_active div.ilc_section_TitelIconBasisVideo,
+.il_editarea_disabled div.ilc_section_TitelIconBasisVideo,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisVideo,
+.il_editarea div.ilc_section_TitelIconBonusAudio,
+.il_editarea_active div.ilc_section_TitelIconBonusAudio,
+.il_editarea_disabled div.ilc_section_TitelIconBonusAudio,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusAudio,
+.il_editarea div.ilc_section_TitelIconBonusText,
+.il_editarea_active div.ilc_section_TitelIconBonusText,
+.il_editarea_disabled div.ilc_section_TitelIconBonusText,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusText,
+.il_editarea div.ilc_section_TitelIconBonusVideo,
+.il_editarea_active div.ilc_section_TitelIconBonusVideo,
+.il_editarea_disabled div.ilc_section_TitelIconBonusVideo,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusVideo,
+.il_editarea div.ilc_section_TitelIconWahlAudio,
+.il_editarea_active div.ilc_section_TitelIconWahlAudio,
+.il_editarea_disabled div.ilc_section_TitelIconWahlAudio,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlAudio,
+.il_editarea div.ilc_section_TitelIconWahlText,
+.il_editarea_active div.ilc_section_TitelIconWahlText,
+.il_editarea_disabled div.ilc_section_TitelIconWahlText,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlText,
+.il_editarea div.ilc_section_TitelIconWahlVideo,
+.il_editarea_active div.ilc_section_TitelIconWahlVideo,
+.il_editarea_disabled div.ilc_section_TitelIconWahlVideo,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo {
+  padding: 10px;
+  width: 100%;
+  background-color: #cce0fd;
+  min-height: 150px;
+  content: "Unsichtbar. Steuern die Icon in Header";
+}
+.il_editarea div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_active div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea div.ilc_section_TitelIconBasisText:after,
+.il_editarea_active div.ilc_section_TitelIconBasisText:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisText:after,
+.il_editarea div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_active div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_active div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea div.ilc_section_TitelIconBonusText:after,
+.il_editarea_active div.ilc_section_TitelIconBonusText:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusText:after,
+.il_editarea div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_active div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_active div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea div.ilc_section_TitelIconWahlText:after,
+.il_editarea_active div.ilc_section_TitelIconWahlText:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlText:after,
+.il_editarea div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_active div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo:after {
+  border: 1px solid #555;
+  padding: 5px;
+}
+.il_editarea div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_active div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisAudio:after {
+  content: "Basismodul Audio";
+}
+.il_editarea div.ilc_section_TitelIconBasisText:after,
+.il_editarea_active div.ilc_section_TitelIconBasisText:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisText:after {
+  content: "Basismodul Text";
+}
+.il_editarea div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_active div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisVideo:after {
+  content: "Basismodul Video";
+}
+.il_editarea div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_active div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusAudio:after {
+  content: "Bonusmodul Audio";
+}
+.il_editarea div.ilc_section_TitelIconBonusText:after,
+.il_editarea_active div.ilc_section_TitelIconBonusText:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusText:after {
+  content: "Bonusmodul Text";
+}
+.il_editarea div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_active div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusVideo:after {
+  content: "Bonusmodul Video";
+}
+.il_editarea div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_active div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlAudio:after {
+  content: "Wahlmodul Audio";
+}
+.il_editarea div.ilc_section_TitelIconWahlText:after,
+.il_editarea_active div.ilc_section_TitelIconWahlText:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlText:after {
+  content: "Wahlmodul Text";
+}
+.il_editarea div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_active div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo:after {
+  content: "Wahlmodul Video";
+}
+div.il_editarea_disabled,
+div.il_editarea_disabled_selected {
+  border-width: 5px;
+}

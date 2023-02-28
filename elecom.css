@@ -22802,11 +22802,20 @@ a.ilRating:hover {
 #headerimage.Override.Basic {
   filter: brightness(0) saturate(100%) invert(35%) sepia(97%) saturate(1189%) hue-rotate(178deg) brightness(105%) contrast(99%);
 }
+#headerimage.Override.Basic + h1 a#il_mhead_t_focus {
+  color: #0199F4;
+}
 #headerimage.Override.Bonus {
   filter: brightness(0) saturate(100%) invert(73%) sepia(58%) saturate(3135%) hue-rotate(336deg) brightness(100%) contrast(90%);
 }
+#headerimage.Override.Bonus + h1 a#il_mhead_t_focus {
+  color: #F18E38;
+}
 #headerimage.Override.Wahl {
   filter: brightness(0) saturate(100%) invert(67%) sepia(73%) saturate(381%) hue-rotate(35deg) brightness(99%) contrast(83%);
+}
+#headerimage.Override.Wahl + h1 a#il_mhead_t_focus {
+  color: #A2C942;
 }
 h1.ilHeader {
   font-family: "Poppins", Sans-serif;

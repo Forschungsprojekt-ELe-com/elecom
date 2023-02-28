@@ -22903,6 +22903,43 @@ div.il_HeaderInner {
   width: 100%;
   background-color: #cce0fd;
   min-height: 150px;
+}
+.il_editarea div.ilc_section_TitelIconBasisAudio:before,
+.il_editarea_active div.ilc_section_TitelIconBasisAudio:before,
+.il_editarea_disabled div.ilc_section_TitelIconBasisAudio:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisAudio:before,
+.il_editarea div.ilc_section_TitelIconBasisText:before,
+.il_editarea_active div.ilc_section_TitelIconBasisText:before,
+.il_editarea_disabled div.ilc_section_TitelIconBasisText:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisText:before,
+.il_editarea div.ilc_section_TitelIconBasisVideo:before,
+.il_editarea_active div.ilc_section_TitelIconBasisVideo:before,
+.il_editarea_disabled div.ilc_section_TitelIconBasisVideo:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisVideo:before,
+.il_editarea div.ilc_section_TitelIconBonusAudio:before,
+.il_editarea_active div.ilc_section_TitelIconBonusAudio:before,
+.il_editarea_disabled div.ilc_section_TitelIconBonusAudio:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusAudio:before,
+.il_editarea div.ilc_section_TitelIconBonusText:before,
+.il_editarea_active div.ilc_section_TitelIconBonusText:before,
+.il_editarea_disabled div.ilc_section_TitelIconBonusText:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusText:before,
+.il_editarea div.ilc_section_TitelIconBonusVideo:before,
+.il_editarea_active div.ilc_section_TitelIconBonusVideo:before,
+.il_editarea_disabled div.ilc_section_TitelIconBonusVideo:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusVideo:before,
+.il_editarea div.ilc_section_TitelIconWahlAudio:before,
+.il_editarea_active div.ilc_section_TitelIconWahlAudio:before,
+.il_editarea_disabled div.ilc_section_TitelIconWahlAudio:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlAudio:before,
+.il_editarea div.ilc_section_TitelIconWahlText:before,
+.il_editarea_active div.ilc_section_TitelIconWahlText:before,
+.il_editarea_disabled div.ilc_section_TitelIconWahlText:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlText:before,
+.il_editarea div.ilc_section_TitelIconWahlVideo:before,
+.il_editarea_active div.ilc_section_TitelIconWahlVideo:before,
+.il_editarea_disabled div.ilc_section_TitelIconWahlVideo:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo:before {
   content: "Unsichtbar. Steuern die Icon in Header";
 }
 .il_editarea div.ilc_section_TitelIconBasisAudio:after,

@@ -22782,6 +22782,32 @@ a.ilRating:hover {
 #headerimage {
   display: none;
 }
+#headerimage.Override {
+  display: block;
+  width: 0;
+  height: 0;
+  padding: 45px 45px 0 0;
+  background: transparent none no-repeat center;
+  background-size: cover;
+}
+#headerimage.Override.Audio {
+  background-image: url("images/audio.jpg");
+}
+#headerimage.Override.Text {
+  background-image: url("images/text.jpg");
+}
+#headerimage.Override.Video {
+  background-image: url("images/video.jpg");
+}
+#headerimage.Override.Basis {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(97%) saturate(1189%) hue-rotate(178deg) brightness(105%) contrast(99%);
+}
+#headerimage.Override.Bonus {
+  filter: brightness(0) saturate(100%) invert(73%) sepia(58%) saturate(3135%) hue-rotate(336deg) brightness(100%) contrast(90%);
+}
+#headerimage.Override.Wahl {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(73%) saturate(381%) hue-rotate(35deg) brightness(99%) contrast(83%);
+}
 h1.ilHeader {
   font-family: "Poppins", Sans-serif;
   font-weight: 400;

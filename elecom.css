@@ -22791,13 +22791,13 @@ a.ilRating:hover {
   background-size: cover;
 }
 #headerimage.Override.Audio {
-  background-image: url("images/audio.jpg");
+  background-image: url("images/audio.png");
 }
 #headerimage.Override.Text {
-  background-image: url("images/text.jpg");
+  background-image: url("images/text.png");
 }
 #headerimage.Override.Video {
-  background-image: url("images/video.jpg");
+  background-image: url("images/video.png");
 }
 #headerimage.Override.Basis {
   filter: brightness(0) saturate(100%) invert(35%) sepia(97%) saturate(1189%) hue-rotate(178deg) brightness(105%) contrast(99%);

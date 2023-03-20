@@ -79,6 +79,9 @@
 	</main>
 </div>
 <script>
+    if (!$(".il-mainbar .il-mainbar-triggers .btn-bulky .icon[src*='icon_adm.svg']").length && $(".ilc_section_HideTabForUser")) {
+        $("#ilTab").hide();
+    }
 	il.Util.addOnLoad(function() {
 <!-- BEGIN on_load_code -->
     <!-- BEGIN on_load_code_inner -->

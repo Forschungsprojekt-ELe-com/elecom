@@ -117,6 +117,9 @@
         if ($(".ilc_section_TitelIconWahlVideo").length) {
             $("#headerimage").addClass("Override Wahl Video");
 		}
+        if (!$(".ilNewObjectSelector").length && $(".ilc_section_HideTabForUser")) {
+            $("#ilTab").hide();
+        }
 	});
 </script>
 </body>

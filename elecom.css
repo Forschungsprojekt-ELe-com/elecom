@@ -8076,7 +8076,6 @@ ul.dropdown-menu > li > .btn:focus {
   font-size: 12px;
 }
 .il-standard-form .il-standard-form-header + .il-section-input {
-  margin-top: -27.85714286px;
   padding: 0;
 }
 .il-standard-form .il-standard-form-header + .il-section-input .il-section-input-header h2 {
@@ -18282,38 +18281,16 @@ body.ilPrtfPdfBody .ilPCMyCoursesToggle img {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+#onscreenchat-container .chat-window-wrapper .panel-footer-for-shadow {
+  height: 0;
+  width: 0;
+}
 #onscreenchat-container .chat-window-wrapper .iosOnScreenChatMessageContainer {
-  background-color: transparent;
-}
-#onscreenchat-container .chat-window-wrapper .iosOnScreenChatMessageContainer .iosOnScreenChatMessagePlaceholder {
-  position: absolute;
-  z-index: 0;
-  border: 0 none !important;
-  background-color: transparent;
-  opacity: .5;
-}
-#onscreenchat-container .chat-window-wrapper .iosOnScreenChatMessageContainer .iosOnScreenChatMessage {
-  background-color: transparent;
-  position: relative;
-  z-index: 1;
-  white-space: pre-wrap;
-  user-select: text;
-  outline: none;
-  overflow-x: hidden;
-  height: auto;
-  min-height: 26px;
-  max-height: 75px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  cursor: text;
-  padding-right: 26px;
+  resize: none;
+  width: 100%;
+  border: 1px solid;
+  background: white;
+  height: 25px;
 }
 #onscreenchat-container .chat-window-wrapper .osc_truncate_username {
   width: 150px;
@@ -22437,9 +22414,6 @@ a.ilRating:hover {
   border: 0 solid transparent;
   line-height: 24px;
 }
-.ilToolbarItems .ilToolbarGroup .navbar-form > span + input.btn {
-  display: block;
-}
 .ilSkillFilter .ilToolbar select.form-control {
   display: inline;
 }
@@ -22459,6 +22433,16 @@ a.ilRating:hover {
   .ilToolbar li .navbar-form select.form-control {
     width: 100%;
   }
+}
+.form-horizontal .control-label {
+  min-height: 32px;
+}
+.form-horizontal .control-label[for="crscert_btn_custom_class"] {
+  text-align: right;
+  height: 32px;
+}
+.form-horizontal .control-label[for="crscert_btn_custom_class"].col-sm-3 + .col-sm-9 {
+  padding-top: 0;
 }
 .h5p-content ul.h5p-actions {
   display: none;
@@ -22936,7 +22920,7 @@ div.il_HeaderInner {
 .il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo {
   padding: 10px;
   width: 100%;
-  background-color: #cce0fd;
+  background-color: #e9d6ef;
   min-height: 150px;
 }
 .il_editarea div.ilc_section_TitelIconBasisAudio:before,
@@ -23069,6 +23053,29 @@ div.il_HeaderInner {
 .il_editarea_disabled div.ilc_section_TitelIconWahlVideo:after,
 .il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo:after {
   content: "Wahlmodul Video";
+}
+.il_editarea div.ilc_section_HideTabForUser,
+.il_editarea_active div.ilc_section_HideTabForUser,
+.il_editarea_disabled div.ilc_section_HideTabForUser,
+.il_editarea_disabled_selected div.ilc_section_HideTabForUser {
+  padding: 10px;
+  width: 100%;
+  background-color: #E9D6EF;
+  min-height: 150px;
+}
+.il_editarea div.ilc_section_HideTabForUser:before,
+.il_editarea_active div.ilc_section_HideTabForUser:before,
+.il_editarea_disabled div.ilc_section_HideTabForUser:before,
+.il_editarea_disabled_selected div.ilc_section_HideTabForUser:before {
+  content: "Unsichtbar. Steuert die Sichtbarkeit der Reiter";
+}
+.il_editarea div.ilc_section_HideTabForUser:after,
+.il_editarea_active div.ilc_section_HideTabForUser:after,
+.il_editarea_disabled div.ilc_section_HideTabForUser:after,
+.il_editarea_disabled_selected div.ilc_section_HideTabForUser:after {
+  content: "HideTabForUser";
+  border: 1px solid #555;
+  padding: 5px;
 }
 div.il_editarea_disabled,
 div.il_editarea_disabled_selected {

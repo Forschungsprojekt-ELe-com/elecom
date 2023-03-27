@@ -13,3 +13,4 @@
 * 15.02.2023: Kompiliert mit delos 7.18.
 * 27.02.2023: Anpassung.
 * 20.03.2023: Reiter auf LandingPage ausblenden für Lerner. Kompiliert mit delos 7.19.
+* 27.03.2023: Anpassung Kachel Layout.

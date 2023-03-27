@@ -22444,6 +22444,63 @@ a.ilRating:hover {
 .form-horizontal .control-label[for="crscert_btn_custom_class"].col-sm-3 + .col-sm-9 {
   padding-top: 0;
 }
+#mail_filter {
+  display: block;
+  width: 100%;
+  height: 28px;
+  padding: 3px 8px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  font-size: 12px;
+  color: #161616;
+  border: 1px solid #757575;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 32px;
+}
+#mail_filter:focus {
+  border-color: #8198b7;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(129, 152, 183, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(129, 152, 183, 0.6);
+}
+#mail_filter::-moz-placeholder {
+  color: #6f6f6f;
+  opacity: 1;
+}
+#mail_filter:-ms-input-placeholder {
+  color: #6f6f6f;
+}
+#mail_filter::-webkit-input-placeholder {
+  color: #6f6f6f;
+}
+#mail_filter::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+#mail_filter[disabled],
+#mail_filter[readonly],
+fieldset[disabled] #mail_filter {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+#mail_filter[disabled],
+fieldset[disabled] #mail_filter {
+  cursor: not-allowed;
+}
+textarea#mail_filter {
+  height: auto;
+}
 .h5p-content ul.h5p-actions {
   display: none;
 }
@@ -22783,6 +22840,12 @@ a.ilRating:hover {
 #headerimage.Override.Video {
   background-image: url("images/video.png");
 }
+#headerimage.Override.Allgemein {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(91%) saturate(6148%) hue-rotate(210deg) brightness(104%) contrast(99%);
+}
+#headerimage.Override.Allgemein + h1 a#il_mhead_t_focus {
+  color: #0164F4;
+}
 #headerimage.Override.Basic {
   filter: brightness(0) saturate(100%) invert(35%) sepia(97%) saturate(1189%) hue-rotate(178deg) brightness(105%) contrast(99%);
 }
@@ -22821,6 +22884,10 @@ div.il_HeaderInner {
   padding-right: 10px;
   margin-bottom: 20px;
 }
+.il-card img.img-responsive,
+.il-card img.img-standard {
+  margin: 0;
+}
 .il-card,
 .il-card.thumbnail {
   position: relative;
@@ -22831,7 +22898,8 @@ div.il_HeaderInner {
 }
 .il-card .il-card-repository-head,
 .il-card.thumbnail .il-card-repository-head {
-  background-color: white;
+  background: transparent url("images/il-card-repository-head-bg.png") no-repeat left center;
+  background-size: auto 100%;
 }
 .il-card .il-card-repository-head .icon.outlined,
 .il-card.thumbnail .il-card-repository-head .icon.outlined {
@@ -22839,7 +22907,7 @@ div.il_HeaderInner {
 }
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button,
 .il-card.thumbnail .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button {
-  background-color: white;
+  background-color: transparent;
   border: 0 none;
   width: 60px;
   height: 29px;
@@ -22858,23 +22926,23 @@ div.il_HeaderInner {
 .il-card.thumbnail .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu {
   left: auto;
   right: 0;
+  padding: 0;
+}
+.il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu > li > .btn,
+.il-card.thumbnail .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu > li > .btn {
+  font-size: 13px;
+  line-height: 17px;
 }
 .il-card .caption,
 .il-card.thumbnail .caption {
   color: #0274be;
   font-size: 16px;
 }
-.il-card .caption.card-title,
-.il-card.thumbnail .caption.card-title {
-  position: absolute;
-  bottom: 0;
-  z-index: 100;
-}
 .il-card .caption.card-title a,
 .il-card.thumbnail .caption.card-title a {
-  font-size: 22px;
-  color: white;
-  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
 }
 .ilContainerBlockHeader {
   background-color: white;
@@ -22882,6 +22950,18 @@ div.il_HeaderInner {
 .ilc_section_ElecomBlockWrapper h3.ilHeader {
   display: none;
 }
+.il_editarea div.ilc_section_TitelIconAllgemeinAudio,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinAudio,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinAudio,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinAudio,
+.il_editarea div.ilc_section_TitelIconAllgemeinText,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinText,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinText,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinText,
+.il_editarea div.ilc_section_TitelIconAllgemeinVideo,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinVideo,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinVideo,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinVideo,
 .il_editarea div.ilc_section_TitelIconBasisAudio,
 .il_editarea_active div.ilc_section_TitelIconBasisAudio,
 .il_editarea_disabled div.ilc_section_TitelIconBasisAudio,
@@ -22923,6 +23003,18 @@ div.il_HeaderInner {
   background-color: #e9d6ef;
   min-height: 150px;
 }
+.il_editarea div.ilc_section_TitelIconAllgemeinAudio:before,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinAudio:before,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinAudio:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinAudio:before,
+.il_editarea div.ilc_section_TitelIconAllgemeinText:before,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinText:before,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinText:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinText:before,
+.il_editarea div.ilc_section_TitelIconAllgemeinVideo:before,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinVideo:before,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinVideo:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinVideo:before,
 .il_editarea div.ilc_section_TitelIconBasisAudio:before,
 .il_editarea_active div.ilc_section_TitelIconBasisAudio:before,
 .il_editarea_disabled div.ilc_section_TitelIconBasisAudio:before,
@@ -22961,6 +23053,18 @@ div.il_HeaderInner {
 .il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo:before {
   content: "Unsichtbar. Steuern die Icon in Header";
 }
+.il_editarea div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinVideo:after,
 .il_editarea div.ilc_section_TitelIconBasisAudio:after,
 .il_editarea_active div.ilc_section_TitelIconBasisAudio:after,
 .il_editarea_disabled div.ilc_section_TitelIconBasisAudio:after,
@@ -22999,6 +23103,24 @@ div.il_HeaderInner {
 .il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo:after {
   border: 1px solid #555;
   padding: 5px;
+}
+.il_editarea div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinAudio:after {
+  content: "Allgemeinmodul Audio";
+}
+.il_editarea div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinText:after {
+  content: "Allgemeinmodul Text";
+}
+.il_editarea div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinVideo:after {
+  content: "Allgemeinmodul Video";
 }
 .il_editarea div.ilc_section_TitelIconBasisAudio:after,
 .il_editarea_active div.ilc_section_TitelIconBasisAudio:after,

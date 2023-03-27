@@ -79,7 +79,7 @@
 	</main>
 </div>
 <script>
-    if (!$(".il-mainbar .il-mainbar-triggers .btn-bulky .icon[src*='icon_adm.svg']").length && $(".ilc_section_HideTabForUser")) {
+    if (!$(".il-maincontrols img[alt*='Administration']").length && $(".ilc_section_HideTabForUser").length) {
         $("#ilTab").hide();
     }
 	il.Util.addOnLoad(function() {
@@ -93,6 +93,15 @@
         });
         $("div.il-maincontrols-mainbar button.btn-bulky img[src$='icon_fav.svg']").closest("button").addClass("favorite");
         $('.h5p-iframe').contents().find("head").append($('<link rel="stylesheet" type="text/css" href="./Customizing/global/skin/elecom/elecom.css">'));
+        if ($(".ilc_section_TitelIconAllgemeinAudio").length) {
+            $("#headerimage").addClass("Override Allgemein Audio");
+        }
+        if ($(".ilc_section_TitelIconAllgemeinText").length) {
+            $("#headerimage").addClass("Override Allgemein Text");
+        }
+        if ($(".ilc_section_TitelIconAllgemeinVideo").length) {
+            $("#headerimage").addClass("Override Allgemein Video");
+        }
         if ($(".ilc_section_TitelIconBasisAudio").length) {
             $("#headerimage").addClass("Override Basic Audio");
 		}
@@ -120,7 +129,7 @@
         if ($(".ilc_section_TitelIconWahlVideo").length) {
             $("#headerimage").addClass("Override Wahl Video");
 		}
-        if (!$(".il-mainbar .il-mainbar-triggers .btn-bulky .icon[src*='icon_adm.svg']").length && $(".ilc_section_HideTabForUser")) {
+        if (!$(".il-maincontrols img[alt*='Administration']").length && $(".ilc_section_HideTabForUser").length) {
             $("#ilTab").hide();
         }
 	});

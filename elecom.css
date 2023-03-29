@@ -22898,8 +22898,7 @@ div.il_HeaderInner {
 }
 .il-card .il-card-repository-head,
 .il-card.thumbnail .il-card-repository-head {
-  background: transparent url("images/il-card-repository-head-bg.png") no-repeat left center;
-  background-size: auto 100%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .il-card .il-card-repository-head .icon.outlined,
 .il-card.thumbnail .il-card-repository-head .icon.outlined {

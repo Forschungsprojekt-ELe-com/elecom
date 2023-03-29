@@ -22820,9 +22820,6 @@ textarea#mail_filter {
 .panel .panel-heading.ilBlockHeader {
   background-color: white;
 }
-#headerimage {
-  display: none;
-}
 #headerimage.Override {
   display: block;
   width: 0;

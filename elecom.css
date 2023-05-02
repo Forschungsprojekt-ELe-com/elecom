@@ -22916,6 +22916,7 @@ div.il_HeaderInner {
   margin: 0;
   border: 0 none;
   background: url("images/dot.png") no-repeat center;
+  filter: brightness(0) saturate(100%) invert(1);
   background-size: contain;
 }
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu,

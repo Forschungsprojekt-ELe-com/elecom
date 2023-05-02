@@ -1,5 +1,5 @@
 # **Ilias 7.x Design für Ele-com**
-# **Kompiliert mit delos 7.19: bei abweichender ILIAS Version evtl. kompilieren lassen!**
+# **Kompiliert mit delos 7.20: bei abweichender ILIAS Version evtl. kompilieren lassen!**
 
 ### **Installation**
 
@@ -14,3 +14,4 @@
 * 27.02.2023: Anpassung.
 * 20.03.2023: Reiter auf LandingPage ausblenden für Lerner. Kompiliert mit delos 7.19.
 * 27.03.2023: Anpassung Kachel Layout.
+* 02.05.2023: Anpassung Kachel Layout. Kompiliert mit delos 7.20.

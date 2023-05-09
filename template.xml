@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<template xmlns = "http://www.w3.org" responsible="Jean-Luc Braun" mail="braun@qualitus.de"
-          version="7"
-          name="ILIAS 7.20 - v7">
-  <style id="elecom" name="Ele-com" image_directory="images" />
+<?xml version = "1.0" encoding = "UTF-8"?>
+<template xmlns = "http://www.w3.org" responsible = "Jean-Luc Braun" mail = "braun@qualitus.de" ilias = "v7.20"
+          version = "7"
+          name = "ILIAS 7.20 - Skin v7">
+  <style id = "elecom" name = "Ele-com" image_directory = "images" />
 </template>

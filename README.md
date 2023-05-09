@@ -1,5 +1,4 @@
-# **Ilias 7.x Design für Ele-com**
-# **Kompiliert mit delos 7.20: bei abweichender ILIAS Version evtl. kompilieren lassen!**
+# **Ilias 7.x Design für Ele-com** 
 
 ### **Installation**
 

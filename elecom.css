@@ -8214,7 +8214,6 @@ ul.dropdown-menu > li > .btn:focus {
   font-size: 12px;
 }
 .il-standard-form .il-standard-form-header + .il-section-input {
-  margin-top: -27.85714286px;
   padding: 0;
 }
 .il-standard-form .il-standard-form-header + .il-section-input .il-section-input-header h2 {
@@ -9353,7 +9352,7 @@ footer {
     -ms-grid-row: 3;
     grid-column: 1;
     grid-row: 3;
-    height: calc(100% - 45px);
+    height: calc(100% -  45px);
   }
   .il-layout-page.with-mainbar-slates-engaged .nav.il-maincontrols .il-maincontrols-mainbar {
     -ms-grid-columns: 1fr;
@@ -9504,7 +9503,7 @@ footer {
   .il-layout-page-content {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 45px);
+    min-height: calc(100vh -  45px);
     padding-bottom: 50px;
   }
   .il-layout-page-content > div {
@@ -23013,6 +23012,7 @@ h1.ilHeader {
 a#il_mhead_t_focus {
   color: #3a3a4a;
   font-size: 40px;
+  line-height: 30px;
 }
 div.ilHeaderDesc,
 div.ilHeaderAlert {

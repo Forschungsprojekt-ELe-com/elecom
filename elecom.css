@@ -23092,6 +23092,13 @@ div.il_HeaderInner {
 .ilc_section_ElecomBlockWrapper h3.ilHeader {
   display: none;
 }
+.ilc_section_ElecomBlockWrapper div.col-xs-12 .flex-col > div[style*="100%"],
+.ilc_section_ElecomBlockWrapper div.col-sm-4 .flex-col > div[style*="100%"],
+.ilc_section_ElecomBlockWrapper div.col-md-4 .flex-col > div[style*="100%"],
+.ilc_section_ElecomBlockWrapper div.col-lg-4 .flex-col > div[style*="100%"] {
+  display: flex;
+  flex-flow: column nowrap;
+}
 .il_editarea div.ilc_section_TitelIconAllgemeinAudio,
 .il_editarea_active div.ilc_section_TitelIconAllgemeinAudio,
 .il_editarea_disabled div.ilc_section_TitelIconAllgemeinAudio,
@@ -23344,4 +23351,45 @@ div.il_HeaderInner {
 div.il_editarea_disabled,
 div.il_editarea_disabled_selected {
   border-width: 5px;
+}
+#il_head_action .btn-default.dropdown-toggle {
+  border-color: transparent;
+  background-color: transparent;
+}
+#il_head_action .btn-default.dropdown-toggle > span {
+  display: none;
+}
+#il_head_action .btn-default.dropdown-toggle > span.caret {
+  color: #0274be;
+  border: 0 none;
+  display: inline;
+  font-size: 30px;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+#il_head_action .btn-default.dropdown-toggle > span.caret::before {
+  content: "\e019";
+}
+div.favourites-active {
+  padding-right: 55px;
+  position: relative;
+}
+div.favourites-active div.fav-on,
+div.favourites-active div.fav-off {
+  position: absolute;
+  font-size: 30px;
+  top: 45px;
+  right: 15px;
+}
+div.favourites-active div.fav-on a.glyph:hover .glyphicon::before,
+div.favourites-active div.fav-off a.glyph:hover .glyphicon::before {
+  -webkit-animation: rotate1 0.1s ease 0s 1 normal;
+  -moz-animation: rotate1 0.1s ease 0s 1 normal;
+  -ms-animation: rotate1 0.1s ease 0s 1 normal;
+  animation: rotate1 0.1s ease 0s 1 normal;
+}
+div.favourites-active div.fav-on a.glyph {
+  color: #ffc107;
 }

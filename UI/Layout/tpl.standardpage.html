@@ -82,12 +82,26 @@
     if (!$(".il-maincontrols img[alt*='Administration']").length && $(".ilc_section_HideTabForUser").length) {
         $("#ilTab").hide();
     }
+    if ($('img[alt="Administration"]').length) {
+        $("html").addClass("admin");
+    }
 	il.Util.addOnLoad(function() {
 <!-- BEGIN on_load_code -->
     <!-- BEGIN on_load_code_inner -->
         {OLCODE}
     <!-- END on_load_code_inner -->
 <!-- END on_load_code -->
+        /*if ($("#tttt").length) {
+            $("#tttt > div.btn-group > button + ul li a").each(function() {
+                if ($(this).attr("href").indexOf("cmd=addToDesk") >= 0) {
+                    $(this).closest(".il_HeaderInner ").addClass("favourites-active");
+                    $(this).closest(".il_HeaderInner ").prepend("<div class='fav-off'><a class='glyph' href='" + $(this).attr("href") + "'><span class='glyphicon glyphicon-star-empty' title='" + $(this).text() + "'></span></a></div>");
+                } else if ($(this).attr("href").indexOf("cmd=removeFromDesk") >= 0) {
+                    $(this).closest(".il_HeaderInner ").addClass("favourites-active");
+                    $(this).closest(".il_HeaderInner ").prepend("<div class='fav-on'><a class='glyph' href='" + $(this).attr("href") + "'><span class='glyphicon glyphicon-star' title='" + $(this).text() + "'></span></a></div>");
+                }
+            });
+        }*/
         $(".breadcrumbs .crumb").each(function() {
             $(this).attr("title", $(this).find("a").text());
         });

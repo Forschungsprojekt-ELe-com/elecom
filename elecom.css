@@ -8214,6 +8214,7 @@ ul.dropdown-menu > li > .btn:focus {
   font-size: 12px;
 }
 .il-standard-form .il-standard-form-header + .il-section-input {
+  margin-top: -27.85714286px;
   padding: 0;
 }
 .il-standard-form .il-standard-form-header + .il-section-input .il-section-input-header h2 {
@@ -8803,6 +8804,9 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default.engaged.focu
 .il-table-data .header.cell {
   font-weight: bold;
 }
+.il-workflow {
+  word-break: break-word;
+}
 .il-workflow-header .il-workflow-title {
   background-color: #f0f0f0;
   color: #4c6586;
@@ -9352,7 +9356,7 @@ footer {
     -ms-grid-row: 3;
     grid-column: 1;
     grid-row: 3;
-    height: calc(100% -  45px);
+    height: calc(100% - 45px);
   }
   .il-layout-page.with-mainbar-slates-engaged .nav.il-maincontrols .il-maincontrols-mainbar {
     -ms-grid-columns: 1fr;
@@ -9503,7 +9507,7 @@ footer {
   .il-layout-page-content {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh -  45px);
+    min-height: calc(100vh - 45px);
     padding-bottom: 50px;
   }
   .il-layout-page-content > div {
@@ -14292,7 +14296,6 @@ html.ilc_Fullscreen td > div,
 body.ilc_Fullscreen td > div,
 html.ilc_Fullscreen td > div > figure > div > iframe,
 body.ilc_Fullscreen td > div > figure > div > iframe {
-  height: 100%;
   width: 100%;
 }
 div.ilLMMenu {

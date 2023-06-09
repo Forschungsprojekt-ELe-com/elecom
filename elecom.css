@@ -8214,7 +8214,6 @@ ul.dropdown-menu > li > .btn:focus {
   font-size: 12px;
 }
 .il-standard-form .il-standard-form-header + .il-section-input {
-  margin-top: -27.85714286px;
   padding: 0;
 }
 .il-standard-form .il-standard-form-header + .il-section-input .il-section-input-header h2 {
@@ -8804,9 +8803,6 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default.engaged.focu
 .il-table-data .header.cell {
   font-weight: bold;
 }
-.il-workflow {
-  word-break: break-word;
-}
 .il-workflow-header .il-workflow-title {
   background-color: #f0f0f0;
   color: #4c6586;
@@ -9356,7 +9352,7 @@ footer {
     -ms-grid-row: 3;
     grid-column: 1;
     grid-row: 3;
-    height: calc(100% - 45px);
+    height: calc(100% -  45px);
   }
   .il-layout-page.with-mainbar-slates-engaged .nav.il-maincontrols .il-maincontrols-mainbar {
     -ms-grid-columns: 1fr;
@@ -9507,7 +9503,7 @@ footer {
   .il-layout-page-content {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 45px);
+    min-height: calc(100vh -  45px);
     padding-bottom: 50px;
   }
   .il-layout-page-content > div {
@@ -14296,6 +14292,7 @@ html.ilc_Fullscreen td > div,
 body.ilc_Fullscreen td > div,
 html.ilc_Fullscreen td > div > figure > div > iframe,
 body.ilc_Fullscreen td > div > figure > div > iframe {
+  height: 100%;
   width: 100%;
 }
 div.ilLMMenu {
@@ -22967,43 +22964,14 @@ textarea#mail_filter {
 .panel .panel-heading.ilBlockHeader {
   background-color: white;
 }
-#headerimage.Override {
-  display: block;
-  width: 0;
-  height: 0;
-  padding: 45px 45px 0 0;
-  background: transparent none no-repeat center;
-  background-size: cover;
-}
-#headerimage.Override.Audio {
-  background-image: url("images/audio.png");
-}
-#headerimage.Override.Text {
-  background-image: url("images/text.png");
-}
-#headerimage.Override.Video {
-  background-image: url("images/video.png");
-}
-#headerimage.Override.Allgemein {
-  filter: brightness(0) saturate(100%) invert(26%) sepia(91%) saturate(6148%) hue-rotate(210deg) brightness(104%) contrast(99%);
-}
 #headerimage.Override.Allgemein + h1 a#il_mhead_t_focus {
   color: #0164F4;
-}
-#headerimage.Override.Basic {
-  filter: brightness(0) saturate(100%) invert(35%) sepia(97%) saturate(1189%) hue-rotate(178deg) brightness(105%) contrast(99%);
 }
 #headerimage.Override.Basic + h1 a#il_mhead_t_focus {
   color: #0199F4;
 }
-#headerimage.Override.Bonus {
-  filter: brightness(0) saturate(100%) invert(73%) sepia(58%) saturate(3135%) hue-rotate(336deg) brightness(100%) contrast(90%);
-}
 #headerimage.Override.Bonus + h1 a#il_mhead_t_focus {
   color: #F18E38;
-}
-#headerimage.Override.Wahl {
-  filter: brightness(0) saturate(100%) invert(67%) sepia(73%) saturate(381%) hue-rotate(35deg) brightness(99%) contrast(83%);
 }
 #headerimage.Override.Wahl + h1 a#il_mhead_t_focus {
   color: #A2C942;

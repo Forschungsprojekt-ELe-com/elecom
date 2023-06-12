@@ -23389,6 +23389,29 @@ div.il_HeaderInner {
   border: 1px solid #555;
   padding: 5px;
 }
+.il_editarea div.ilc_section_HideTitleForCoPage,
+.il_editarea_active div.ilc_section_HideTitleForCoPage,
+.il_editarea_disabled div.ilc_section_HideTitleForCoPage,
+.il_editarea_disabled_selected div.ilc_section_HideTitleForCoPage {
+  padding: 10px;
+  width: 100%;
+  background-color: #E9D6EF;
+  min-height: 150px;
+}
+.il_editarea div.ilc_section_HideTitleForCoPage:before,
+.il_editarea_active div.ilc_section_HideTitleForCoPage:before,
+.il_editarea_disabled div.ilc_section_HideTitleForCoPage:before,
+.il_editarea_disabled_selected div.ilc_section_HideTitleForCoPage:before {
+  content: "Unsichtbar. Steuert die Sichtbarkeit der Title";
+}
+.il_editarea div.ilc_section_HideTitleForCoPage:after,
+.il_editarea_active div.ilc_section_HideTitleForCoPage:after,
+.il_editarea_disabled div.ilc_section_HideTitleForCoPage:after,
+.il_editarea_disabled_selected div.ilc_section_HideTitleForCoPage:after {
+  content: "HideTitleForCoPage";
+  border: 1px solid #555;
+  padding: 5px;
+}
 div.il_editarea_disabled,
 div.il_editarea_disabled_selected {
   border-width: 5px;

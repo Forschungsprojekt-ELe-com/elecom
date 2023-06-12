@@ -158,6 +158,9 @@
         if (!$(".il-maincontrols img[alt*='Administration']").length && $(".ilc_section_HideTabForUser").length) {
             $("#ilTab").hide();
         }
+        if (!$(".il-maincontrols img[alt*='Administration']").length && $(".ilc_section_HideTitleForCoPage").length) {
+            $("div.il_HeaderInner").hide();
+        }
 	});
 </script>
 </body>

@@ -23457,3 +23457,6 @@ div.favourites-active div.fav-off a.glyph:hover .glyphicon::before {
 div.favourites-active div.fav-on a.glyph {
   color: #ffc107;
 }
+.ilc_section_AudioBlockWrapper > h3.ilHeader {
+  display: none;
+}

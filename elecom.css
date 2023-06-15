@@ -23060,9 +23060,6 @@ div.il_HeaderInner {
 .ilContainerBlockHeader {
   background-color: white;
 }
-.ilc_section_ElecomBlockWrapper h3.ilHeader {
-  display: none;
-}
 .ilc_section_ElecomBlockWrapper div.col-xs-12 .flex-col > div[style*="100%"],
 .ilc_section_ElecomBlockWrapper div.col-sm-4 .flex-col > div[style*="100%"],
 .ilc_section_ElecomBlockWrapper div.col-md-4 .flex-col > div[style*="100%"],
@@ -23457,6 +23454,7 @@ div.favourites-active div.fav-off a.glyph:hover .glyphicon::before {
 div.favourites-active div.fav-on a.glyph {
   color: #ffc107;
 }
+ilc_section_VideoBlockWrapper > h3.ilHeader,
 .ilc_section_AudioBlockWrapper > h3.ilHeader {
   display: none;
 }

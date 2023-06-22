@@ -23278,7 +23278,7 @@ div.favourites-active div.fav-on a.glyph {
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption.card-title,
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption.card-title {
   position: absolute;
-  top: 50%;
+  top: 23%;
   left: 0;
   right: 0;
   z-index: 100;
@@ -23286,10 +23286,4 @@ div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileR
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption.card-title a,
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption.card-title a {
   color: white;
-}
-div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption.card-title a,
-div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption.card-title a {
-  font-size: 16px;
-  color: black;
-  font-weight: 500;
 }

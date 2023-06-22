@@ -23275,6 +23275,11 @@ div.favourites-active div.fav-on a.glyph {
     width: 100%;
   }
 }
+div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption:not(.card-title),
+div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption:not(.card-title) {
+  font-size: 14px;
+  color: black;
+}
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption.card-title,
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption.card-title {
   position: absolute;

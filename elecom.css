@@ -23260,6 +23260,11 @@ div.favourites-active div.fav-on a.glyph {
     width: 25%;
   }
 }
+@media (max-width: 992px) {
+  div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height > div.col-md-4 {
+    width: 25%;
+  }
+}
 @media (max-width: 768px) {
   div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height > div.col-sm-6 {
     width: 50%;

@@ -8214,6 +8214,7 @@ ul.dropdown-menu > li > .btn:focus {
   font-size: 12px;
 }
 .il-standard-form .il-standard-form-header + .il-section-input {
+  margin-top: -27.85714286px;
   padding: 0;
 }
 .il-standard-form .il-standard-form-header + .il-section-input .il-section-input-header h2 {
@@ -8803,6 +8804,9 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default.engaged.focu
 .il-table-data .header.cell {
   font-weight: bold;
 }
+.il-workflow {
+  word-break: break-word;
+}
 .il-workflow-header .il-workflow-title {
   background-color: #f0f0f0;
   color: #4c6586;
@@ -9352,7 +9356,7 @@ footer {
     -ms-grid-row: 3;
     grid-column: 1;
     grid-row: 3;
-    height: calc(100% -  45px);
+    height: calc(100% - 45px);
   }
   .il-layout-page.with-mainbar-slates-engaged .nav.il-maincontrols .il-maincontrols-mainbar {
     -ms-grid-columns: 1fr;
@@ -9503,7 +9507,7 @@ footer {
   .il-layout-page-content {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh -  45px);
+    min-height: calc(100vh - 45px);
     padding-bottom: 50px;
   }
   .il-layout-page-content > div {
@@ -13031,6 +13035,7 @@ div.ilSideBarContent {
   background-color: #ffffff;
   border: 1px solid #dddddd;
   font-size: 90%;
+  z-index: 5;
   -webkit-box-shadow: 2px 2px 4px #c0c0c0;
   box-shadow: 2px 2px 4px #c0c0c0;
 }
@@ -14292,7 +14297,6 @@ html.ilc_Fullscreen td > div,
 body.ilc_Fullscreen td > div,
 html.ilc_Fullscreen td > div > figure > div > iframe,
 body.ilc_Fullscreen td > div > figure > div > iframe {
-  height: 100%;
   width: 100%;
 }
 div.ilLMMenu {
@@ -19468,6 +19472,11 @@ div.ilc_Question {
   border: 1px solid #C0C0C0;
   padding: 0.25em;
   margin-top: 1em;
+  padding: 15px;
+}
+.questionPrintview .row.ilc_qanswer_Answer {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .solutionbox {
   color: black;
@@ -23060,12 +23069,169 @@ div.il_HeaderInner {
 .ilContainerBlockHeader {
   background-color: white;
 }
+.ilc_section_ElecomBlockWrapper h3.ilHeader {
+  display: none;
+}
 .ilc_section_ElecomBlockWrapper div.col-xs-12 .flex-col > div[style*="100%"],
 .ilc_section_ElecomBlockWrapper div.col-sm-4 .flex-col > div[style*="100%"],
 .ilc_section_ElecomBlockWrapper div.col-md-4 .flex-col > div[style*="100%"],
 .ilc_section_ElecomBlockWrapper div.col-lg-4 .flex-col > div[style*="100%"] {
   display: flex;
   flex-flow: column nowrap;
+}
+.il_editarea div.ilc_section_TitelIconAllgemeinAudio,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinAudio,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinAudio,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinAudio,
+.il_editarea div.ilc_section_TitelIconAllgemeinText,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinText,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinText,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinText,
+.il_editarea div.ilc_section_TitelIconAllgemeinVideo,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinVideo,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinVideo,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinVideo,
+.il_editarea div.ilc_section_TitelIconBasisAudio,
+.il_editarea_active div.ilc_section_TitelIconBasisAudio,
+.il_editarea_disabled div.ilc_section_TitelIconBasisAudio,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisAudio,
+.il_editarea div.ilc_section_TitelIconBasisText,
+.il_editarea_active div.ilc_section_TitelIconBasisText,
+.il_editarea_disabled div.ilc_section_TitelIconBasisText,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisText,
+.il_editarea div.ilc_section_TitelIconBasisVideo,
+.il_editarea_active div.ilc_section_TitelIconBasisVideo,
+.il_editarea_disabled div.ilc_section_TitelIconBasisVideo,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisVideo,
+.il_editarea div.ilc_section_TitelIconBonusAudio,
+.il_editarea_active div.ilc_section_TitelIconBonusAudio,
+.il_editarea_disabled div.ilc_section_TitelIconBonusAudio,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusAudio,
+.il_editarea div.ilc_section_TitelIconBonusText,
+.il_editarea_active div.ilc_section_TitelIconBonusText,
+.il_editarea_disabled div.ilc_section_TitelIconBonusText,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusText,
+.il_editarea div.ilc_section_TitelIconBonusVideo,
+.il_editarea_active div.ilc_section_TitelIconBonusVideo,
+.il_editarea_disabled div.ilc_section_TitelIconBonusVideo,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusVideo,
+.il_editarea div.ilc_section_TitelIconWahlAudio,
+.il_editarea_active div.ilc_section_TitelIconWahlAudio,
+.il_editarea_disabled div.ilc_section_TitelIconWahlAudio,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlAudio,
+.il_editarea div.ilc_section_TitelIconWahlText,
+.il_editarea_active div.ilc_section_TitelIconWahlText,
+.il_editarea_disabled div.ilc_section_TitelIconWahlText,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlText,
+.il_editarea div.ilc_section_TitelIconWahlVideo,
+.il_editarea_active div.ilc_section_TitelIconWahlVideo,
+.il_editarea_disabled div.ilc_section_TitelIconWahlVideo,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo {
+  padding: 10px;
+  width: 100%;
+  background-color: #e9d6ef;
+  min-height: 150px;
+}
+.il_editarea div.ilc_section_TitelIconAllgemeinAudio:before,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinAudio:before,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinAudio:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinAudio:before,
+.il_editarea div.ilc_section_TitelIconAllgemeinText:before,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinText:before,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinText:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinText:before,
+.il_editarea div.ilc_section_TitelIconAllgemeinVideo:before,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinVideo:before,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinVideo:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinVideo:before,
+.il_editarea div.ilc_section_TitelIconBasisAudio:before,
+.il_editarea_active div.ilc_section_TitelIconBasisAudio:before,
+.il_editarea_disabled div.ilc_section_TitelIconBasisAudio:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisAudio:before,
+.il_editarea div.ilc_section_TitelIconBasisText:before,
+.il_editarea_active div.ilc_section_TitelIconBasisText:before,
+.il_editarea_disabled div.ilc_section_TitelIconBasisText:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisText:before,
+.il_editarea div.ilc_section_TitelIconBasisVideo:before,
+.il_editarea_active div.ilc_section_TitelIconBasisVideo:before,
+.il_editarea_disabled div.ilc_section_TitelIconBasisVideo:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisVideo:before,
+.il_editarea div.ilc_section_TitelIconBonusAudio:before,
+.il_editarea_active div.ilc_section_TitelIconBonusAudio:before,
+.il_editarea_disabled div.ilc_section_TitelIconBonusAudio:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusAudio:before,
+.il_editarea div.ilc_section_TitelIconBonusText:before,
+.il_editarea_active div.ilc_section_TitelIconBonusText:before,
+.il_editarea_disabled div.ilc_section_TitelIconBonusText:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusText:before,
+.il_editarea div.ilc_section_TitelIconBonusVideo:before,
+.il_editarea_active div.ilc_section_TitelIconBonusVideo:before,
+.il_editarea_disabled div.ilc_section_TitelIconBonusVideo:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusVideo:before,
+.il_editarea div.ilc_section_TitelIconWahlAudio:before,
+.il_editarea_active div.ilc_section_TitelIconWahlAudio:before,
+.il_editarea_disabled div.ilc_section_TitelIconWahlAudio:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlAudio:before,
+.il_editarea div.ilc_section_TitelIconWahlText:before,
+.il_editarea_active div.ilc_section_TitelIconWahlText:before,
+.il_editarea_disabled div.ilc_section_TitelIconWahlText:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlText:before,
+.il_editarea div.ilc_section_TitelIconWahlVideo:before,
+.il_editarea_active div.ilc_section_TitelIconWahlVideo:before,
+.il_editarea_disabled div.ilc_section_TitelIconWahlVideo:before,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo:before {
+  content: "Unsichtbar. Steuern die Icon in Header";
+}
+.il_editarea div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinAudio:after,
+.il_editarea div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinText:after,
+.il_editarea div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_active div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea div.ilc_section_TitelIconBasisText:after,
+.il_editarea_active div.ilc_section_TitelIconBasisText:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisText:after,
+.il_editarea div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_active div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_active div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea div.ilc_section_TitelIconBonusText:after,
+.il_editarea_active div.ilc_section_TitelIconBonusText:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusText:after,
+.il_editarea div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_active div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_active div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea div.ilc_section_TitelIconWahlText:after,
+.il_editarea_active div.ilc_section_TitelIconWahlText:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlText:after,
+.il_editarea div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_active div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo:after {
+  border: 1px solid #555;
+  padding: 5px;
 }
 .il_editarea div.ilc_section_TitelAllgemein,
 .il_editarea_active div.ilc_section_TitelAllgemein,
@@ -23131,17 +23297,77 @@ div.il_HeaderInner {
 .il_editarea_disabled_selected div.ilc_section_TitelAllgemein:after {
   content: "Allgemeinmodul";
 }
+.il_editarea div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_active div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconAllgemeinVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconAllgemeinVideo:after {
+  content: "Allgemeinmodul Video";
+}
+.il_editarea div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_active div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisAudio:after {
+  content: "Basismodul Audio";
+}
+.il_editarea div.ilc_section_TitelIconBasisText:after,
+.il_editarea_active div.ilc_section_TitelIconBasisText:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisText:after {
+  content: "Basismodul Text";
+}
+.il_editarea div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_active div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconBasisVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBasisVideo:after {
+  content: "Basismodul Video";
+}
 .il_editarea div.ilc_section_TitelBasis:after,
 .il_editarea_active div.ilc_section_TitelBasis:after,
 .il_editarea_disabled div.ilc_section_TitelBasis:after,
 .il_editarea_disabled_selected div.ilc_section_TitelBasis:after {
   content: "Basismodul";
 }
+.il_editarea div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_active div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusAudio:after {
+  content: "Bonusmodul Audio";
+}
+.il_editarea div.ilc_section_TitelIconBonusText:after,
+.il_editarea_active div.ilc_section_TitelIconBonusText:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusText:after {
+  content: "Bonusmodul Text";
+}
+.il_editarea div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_active div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconBonusVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconBonusVideo:after {
+  content: "Bonusmodul Video";
+}
 .il_editarea div.ilc_section_TitelBonus:after,
 .il_editarea_active div.ilc_section_TitelBonus:after,
 .il_editarea_disabled div.ilc_section_TitelBonus:after,
 .il_editarea_disabled_selected div.ilc_section_TitelBonus:after {
   content: "Bonusmodul";
+}
+.il_editarea div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_active div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlAudio:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlAudio:after {
+  content: "Wahlmodul Audio";
+}
+.il_editarea div.ilc_section_TitelIconWahlText:after,
+.il_editarea_active div.ilc_section_TitelIconWahlText:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlText:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlText:after {
+  content: "Wahlmodul Text";
+}
+.il_editarea div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_active div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_disabled div.ilc_section_TitelIconWahlVideo:after,
+.il_editarea_disabled_selected div.ilc_section_TitelIconWahlVideo:after {
+  content: "Wahlmodul Video";
 }
 .il_editarea div.ilc_section_TitelWahl:after,
 .il_editarea_active div.ilc_section_TitelWahl:after,
@@ -23239,56 +23465,4 @@ div.favourites-active div.fav-off a.glyph:hover .glyphicon::before {
 }
 div.favourites-active div.fav-on a.glyph {
   color: #ffc107;
-}
-.ilc_section_VideoBlockWrapper > h3.ilHeader,
-.ilc_section_AudioBlockWrapper > h3.ilHeader {
-  display: none;
-}
-.KIOSK .header .il-logo a {
-  pointer-events: none;
-}
-.KIOSK .il-layout-page-content > div.breadcrumbs {
-  display: none;
-}
-@media (min-width: 1200px) {
-  div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height > div.col-lg-3 {
-    width: 16.6666667%;
-  }
-}
-@media (max-width: 992px) {
-  div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height > div.col-md-4 {
-    width: 25%;
-  }
-}
-@media (max-width: 992px) {
-  div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height > div.col-md-4 {
-    width: 25%;
-  }
-}
-@media (max-width: 768px) {
-  div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height > div.col-sm-6 {
-    width: 50%;
-  }
-}
-@media (max-width: 480px) {
-  div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height > div.col-xs-12 {
-    width: 100%;
-  }
-}
-div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption:not(.card-title),
-div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption:not(.card-title) {
-  font-size: 14px;
-  color: black;
-}
-div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption.card-title,
-div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption.card-title {
-  position: absolute;
-  top: 23%;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption.card-title a,
-div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption.card-title a {
-  color: white;
 }

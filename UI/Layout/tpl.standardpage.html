@@ -82,8 +82,8 @@
     if (!$(".il-maincontrols img[alt*='Administration']").length && $(".ilc_section_HideTabForUser").length) {
         $("#ilTab").hide();
     }
-    if ($('img[alt="Administration"]').length) {
-        $("html").addClass("admin");
+    if ($("img[src$='icon_adm.svg']").length) {
+        $("body").addClass("admin");
     }
 	il.Util.addOnLoad(function() {
 <!-- BEGIN on_load_code -->

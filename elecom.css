@@ -23254,10 +23254,10 @@ div.favourites-active div.fav-on a.glyph {
 .ilc_section_AudioBlockWrapper > h3.ilHeader {
   display: none;
 }
-.KIOSK:not(.admin) .header .il-logo a {
+.KIOSK:not(.admin) header .il-logo a {
   pointer-events: none;
 }
-.KIOSK:not(.admin) .header .il-maincontrols-metabar {
+.KIOSK:not(.admin) header .il-maincontrols-metabar {
   display: none;
 }
 .KIOSK:not(.admin) .il-layout-page-content > div.breadcrumbs {

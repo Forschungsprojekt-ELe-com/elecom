@@ -23257,9 +23257,6 @@ div.favourites-active div.fav-on a.glyph {
 .KIOSK .header .il-logo a {
   pointer-events: none;
 }
-.KIOSK .il-layout-page-content > div.breadcrumbs {
-  display: none;
-}
 @media (min-width: 1200px) {
   div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height > div.col-lg-3 {
     width: 16.6666667%;

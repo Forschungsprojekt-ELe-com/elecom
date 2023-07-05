@@ -21421,6 +21421,11 @@ fieldset[disabled] .btn-primary.active {
 .ilToolbar .btn-default[disabled] {
   padding: 4px 8px !important;
 }
+.il-toggle-button.on .il-toggle-label-on,
+.il-toggle-button.off .il-toggle-label-off {
+  font-size: 13px;
+  line-height: 15px;
+}
 .il-layout-page {
   background-color: #ecf0f2;
   grid-template-rows: 83px auto 1fr;
@@ -23261,6 +23266,9 @@ div.favourites-active div.fav-on a.glyph {
   display: none;
 }
 .KIOSK:not(.admin) .il-layout-page-content > div.breadcrumbs {
+  display: none;
+}
+.KIOSK:not(.admin) div.ilAdminRow {
   display: none;
 }
 footer .il-footer-permanent-url {

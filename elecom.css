@@ -23315,6 +23315,7 @@ div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileR
   left: 0;
   right: 0;
   z-index: 100;
+  pointer-events: none;
 }
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption.card-title a,
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption.card-title a {

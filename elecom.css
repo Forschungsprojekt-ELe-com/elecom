@@ -23333,8 +23333,9 @@ div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileR
   color: white;
 }
 p.maxlist-more {
-  padding-left: 26px;
+  padding-left: 30px;
   font-weight: 600;
+  margin: 10px 0 0;
 }
 p.maxlist-more a {
   text-decoration: none;

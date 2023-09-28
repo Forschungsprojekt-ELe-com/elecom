@@ -33,7 +33,7 @@
 	<!-- BEGIN js_file -->
 	<script src="{JS_FILE}"></script>
 	<!-- END js_file -->
-	
+	<script src="./Customizing/global/skin/elecom/Services/js/hideMaxListItem.js"></script>
 	<!-- BEGIN meta_datum -->
 	<meta name="{META_KEY}" content="{META_VALUE}" />
 	<!-- END meta_datum -->
@@ -171,7 +171,14 @@
                 $("div.il_HeaderInner").hide();
             }
         }
-	});
+        //visitedList
+        $('#visitedList').hideMaxListItems({
+			'max':10,
+			'speed':500,
+			'moreText':'mehr... ([COUNT])',
+            'lessText':'weniger...'
+        });
+    });
 </script>
 </body>
 </html>

@@ -19928,7 +19928,8 @@ div.ilc_Page.readonly textarea[disabled] {
   font-size: 14px;
 }
 li.dd-item.ilc_qordli_OrderListItem > ul li.dd-item.ilc_qordli_OrderListItem {
-  border: 2px white solid;
+  border: 1px #4c6586 solid;
+  border-left: 9px #4c6586 solid;
 }
 .noMargin {
   margin: 0;
@@ -21443,6 +21444,7 @@ fieldset[disabled] .btn-primary.active {
 @media only screen and (max-width: 768px) {
   .il-layout-page.with-mainbar-slates-engaged .nav.il-maincontrols {
     grid-row: 3;
+    height: calc(100% - 60px);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -22659,6 +22661,15 @@ fieldset[disabled] #mail_filter {
 textarea#mail_filter {
   height: auto;
 }
+.ui-autocomplete {
+  z-index: 100;
+}
+@media only screen and (max-width: 768px) {
+  img + img[src$="time_warn.svg"] {
+    display: block;
+    margin: auto;
+  }
+}
 .h5p-content ul.h5p-actions {
   display: none;
 }
@@ -23320,4 +23331,16 @@ div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileR
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption.card-title a,
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card.thumbnail .caption.card-title a {
   color: white;
+}
+p.maxlist-more {
+  padding-left: 26px;
+  font-weight: 600;
+}
+p.maxlist-more a {
+  text-decoration: none;
+  color: #0274be;
+}
+p.maxlist-more a:hover {
+  text-decoration: none;
+  color: #4b4f58;
 }

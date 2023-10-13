@@ -13,6 +13,8 @@
 * 27.02.2023: Anpassung.
 * 20.03.2023: Reiter auf LandingPage ausblenden für Lerner. Kompiliert mit delos 7.19.
 * 27.03.2023: Anpassung Kachel Layout.
-* 02.05.2023: Anpassung Kachel Layout. Kompiliert mit delos 7.20.* 12.05.2023: Auto SkinCompiler mit delos v7.21, Template Version 8
+* 02.05.2023: Anpassung Kachel Layout. Kompiliert mit delos 7.20.
+* 12.05.2023: Auto SkinCompiler mit delos v7.21, Template Version 8
 * 05.06.2023: Auto SkinCompiler mit delos v7.22, Template Version 9
 * 23.06.2023: Auto SkinCompiler mit delos v7.23, Template Version 10
+* 13.10.2023: Kompiliert mit delos 7.25. und node_modules/Bootstrap angepasst

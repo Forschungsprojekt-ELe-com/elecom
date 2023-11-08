@@ -23066,6 +23066,12 @@ div.il_HeaderInner {
   right: 0;
   padding: 0;
 }
+@media (max-width: 768px) {
+  .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu,
+  .il-card.thumbnail .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu {
+    min-width: 0;
+  }
+}
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu > li > .btn,
 .il-card.thumbnail .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu > li > .btn {
   font-size: 13px;

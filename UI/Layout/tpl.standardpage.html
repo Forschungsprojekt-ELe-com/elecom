@@ -180,9 +180,15 @@
 			'moreText':'Alles anzeigen ([COUNT])',
             'lessText':'Weniger anzeigen'
         });
-		$("#toggleVisited").click(function() {
-			$('#visitedList').toggle();
-		});
+
+		let mediaQuery = window.matchMedia('(max-width: 768px)');
+		if (mediaQuery.matches) {
+			$('#visitedWrapper').hide();
+			$("#toggleVisited").click(function() {
+				$('#visitedWrapper').toggle();
+			});
+		}
+
         window.header_slider($('li.heading > div'));
         $("a.ilc_section_ButtonBlock1").attr("target", "_self");
     });

@@ -180,7 +180,9 @@
 			'moreText':'Alles anzeigen ([COUNT])',
             'lessText':'Weniger anzeigen'
         });
-
+		$("#toggleVisited").click(function() {
+			$('#visitedList').toggle();
+		});
         window.header_slider($('li.heading > div'));
         $("a.ilc_section_ButtonBlock1").attr("target", "_self");
     });

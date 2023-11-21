@@ -23283,12 +23283,7 @@ div.favourites-active div.fav-on a.glyph {
   display: none;
 }
 .KIOSK:not(.admin) div.il-header-locator {
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  .KIOSK:not(.admin) div.il-header-locator {
-    display: none;
-  }
+  display: none !important;
 }
 footer .il-footer-permanent-url {
   cursor: pointer;

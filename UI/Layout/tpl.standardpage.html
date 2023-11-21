@@ -190,6 +190,12 @@
 			});
 		}
 
+		$("#plannedList .heading ul").each(function() {
+			if (!$(this).find(".nextItem").length) {
+				$(this).toggle();
+			}
+		});
+
         window.header_slider($('li.heading > div'));
         $("a.ilc_section_ButtonBlock1").attr("target", "_self");
     });

@@ -23374,3 +23374,20 @@ p.maxlist-more a:hover {
     background-position: right center;
   }
 }
+@media only screen and (max-width: 768px) {
+  .ilc_section_TitelIconAllgemeinAudio,
+  .ilc_section_TitelIconAllgemeinText,
+  .ilc_section_TitelIconAllgemeinVideo,
+  .ilc_section_TitelIconBasisAudio,
+  .ilc_section_TitelIconBasisText,
+  .ilc_section_TitelIconBasisVideo,
+  .ilc_section_TitelIconBonusAudio,
+  .ilc_section_TitelIconBonusText,
+  .ilc_section_TitelIconBonusVideo,
+  .ilc_section_TitelIconWahlAudio,
+  .ilc_section_TitelIconWahlText,
+  .ilc_section_TitelIconWahlVideo {
+    background-position: 10px 0;
+    background-size: 33px 42px;
+  }
+}

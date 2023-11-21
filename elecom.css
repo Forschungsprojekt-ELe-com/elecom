@@ -23282,7 +23282,7 @@ div.favourites-active div.fav-on a.glyph {
 .KIOSK:not(.admin) div.ilAdminRow {
   display: none;
 }
-.KIOSK:not(.admin) div.il-header-locator {
+.KIOSK:not(.admin) nav.il-header-locator {
   display: none !important;
 }
 footer .il-footer-permanent-url {

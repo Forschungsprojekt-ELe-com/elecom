@@ -23387,7 +23387,7 @@ p.maxlist-more a:hover {
   .ilc_section_TitelIconWahlAudio,
   .ilc_section_TitelIconWahlText,
   .ilc_section_TitelIconWahlVideo {
-    background-position: 10px 0;
-    background-size: 33px 42px;
+    background-position: 10px 0 !important;
+    background-size: 33px 42px !important;
   }
 }

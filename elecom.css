@@ -23065,7 +23065,6 @@ div.il_HeaderInner {
   left: auto;
   right: 0;
   padding: 0;
-  min-width: 0;
 }
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu > li > .btn,
 .il-card.thumbnail .il-card-repository-head > div.il-card-repository-dropdown > .dropdown .dropdown-menu > li > .btn {
@@ -23312,7 +23311,7 @@ footer .il-footer-permanent-url #current_perma_link {
 }
 @media (max-width: 480px) {
   div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height > div.col-xs-12 {
-    width: 50%;
+    width: 100%;
   }
 }
 div.ilc_section_FolderWrapper div.ilContainerItemsContainer div.ilContainerTileRows div.il-deck div.row.row-eq-height .il-card .caption:not(.card-title),
@@ -23345,4 +23344,35 @@ p.maxlist-more a {
 p.maxlist-more a:hover {
   text-decoration: none;
   color: #4b4f58;
+}
+#toggleVisited {
+  font-family: 'Poppins';
+  color: #4F81BD;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  #toggleVisited {
+    background-image: url("images/tree_col.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+#toggleVisited:hover {
+  color: #000;
+}
+@media only screen and (max-width: 768px) {
+  #toggleVisited:hover {
+    background-image: url("images/tree_exp.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #toggleVisited.open {
+    background-image: url("images/tree_exp.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
 }

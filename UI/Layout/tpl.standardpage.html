@@ -193,7 +193,7 @@
 		$("#plannedList .heading ul").each(function() {
 			if (!$(this).find(".nextItem").length) {
 				$(this).toggle();
-				$(this).find("span.block_heading").attr("slide", "1");
+				$(this).closest(".heading").find("span.block_heading").attr("slide", "1");
 			}
 		});
 

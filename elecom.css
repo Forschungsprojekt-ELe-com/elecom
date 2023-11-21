@@ -23350,20 +23350,18 @@ p.maxlist-more a:hover {
   color: #4F81BD;
   font-size: 16px;
   font-weight: 500;
-  cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
   #toggleVisited {
+    cursor: pointer;
     background-image: url("images/tree_col.svg");
     background-repeat: no-repeat;
     background-position: right center;
   }
 }
-#toggleVisited:hover {
-  color: #000;
-}
 @media only screen and (max-width: 768px) {
   #toggleVisited:hover {
+    color: #000;
     background-image: url("images/tree_exp.svg");
     background-repeat: no-repeat;
     background-position: right center;

@@ -23282,6 +23282,14 @@ div.favourites-active div.fav-on a.glyph {
 .KIOSK:not(.admin) div.ilAdminRow {
   display: none;
 }
+.KIOSK:not(.admin) div.il-header-locator {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .KIOSK:not(.admin) div.il-header-locator {
+    display: none;
+  }
+}
 footer .il-footer-permanent-url {
   cursor: pointer;
 }

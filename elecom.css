@@ -22673,6 +22673,13 @@ textarea#mail_filter {
 .h5p-content ul.h5p-actions {
   display: none;
 }
+.h5p-content {
+  background-color: white;
+  border: 0 none;
+}
+.hidden.questionset[style*="display: block"] {
+  display: block!important;
+}
 /* open-sans-300 - latin-ext_latin */
 @font-face {
   font-family: 'Open Sans';
@@ -23397,8 +23404,4 @@ p.maxlist-more a:hover {
     background-position: 10px 0 !important;
     background-size: 33px 42px !important;
   }
-}
-.h5p-content {
-  background: white;
-  border: 0 none;
 }

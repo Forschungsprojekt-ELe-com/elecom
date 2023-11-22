@@ -23389,7 +23389,11 @@ p.maxlist-more a:hover {
   .ilc_section_TitelIconBonusVideo,
   .ilc_section_TitelIconWahlAudio,
   .ilc_section_TitelIconWahlText,
-  .ilc_section_TitelIconWahlVideo {
+  .ilc_section_TitelIconWahlVideo,
+  .ilc_section_TitelKurs,
+  .ilc_section_TitelOrdner,
+  .ilc_section_TitelQuiz,
+  .ilc_section_TitelTest {
     background-position: 10px 0 !important;
     background-size: 33px 42px !important;
   }

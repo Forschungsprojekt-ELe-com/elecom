@@ -23398,3 +23398,7 @@ p.maxlist-more a:hover {
     background-size: 33px 42px !important;
   }
 }
+.h5p-content {
+  background: white;
+  border: 0 none;
+}

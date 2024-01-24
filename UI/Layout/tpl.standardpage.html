@@ -196,6 +196,9 @@
 				$(this).closest(".heading").find("span.block_heading").attr("slide", "1");
 			}
 		});
+		if (!$(".nextItem").length) {
+			$(".currentItem").closest("ul").toggle();
+		}
 
         window.header_slider($('li.heading > div'));
         $("a.ilc_section_ButtonBlock1").attr("target", "_self");

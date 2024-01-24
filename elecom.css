@@ -23387,3 +23387,6 @@ p.maxlist-more a:hover {
 figure.ilc_media_cont_MediaContainer div.ilc_Mob embed {
   width: auto !important;
 }
+.il-card .caption {
+  hyphens: manual;
+}

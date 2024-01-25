@@ -202,6 +202,11 @@
 
         window.header_slider($('li.heading > div'));
         $("a.ilc_section_ButtonBlock1").attr("target", "_self");
+
+		$("div:not(#il_EditPage) figure.ilc_media_cont_SvgMediaContainer").each(function() {
+			$(this).parent().append('<img src="' + $(this).find('embed').attr('src') + '" style="max-width: 100%;">');
+			$(this).hide();
+		});
     });
 </script>
 </body>

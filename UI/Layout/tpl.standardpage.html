@@ -204,7 +204,8 @@
         $("a.ilc_section_ButtonBlock1").attr("target", "_self");
 
 		$("div:not(#il_EditPage) figure.ilc_media_cont_SvgMediaContainer").each(function() {
-			$(this).parent().append('<img src="' + $(this).find('embed').attr('src') + '" style="max-width: 100%;">');
+			$(this).parent().append('<img src="' + $(this).find('embed').attr('src') +
+					'" style="max-width: 100%; margin: 20px 0;">');
 			$(this).hide();
 		});
     });

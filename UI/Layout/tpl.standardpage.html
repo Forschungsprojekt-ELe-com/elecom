@@ -203,12 +203,27 @@
         window.header_slider($('li.heading > div'));
         $("a.ilc_section_ButtonBlock1").attr("target", "_self");
 
+		function isEmpty( el ){
+			return !$.trim(el.html())
+		}
+		$.fn.outerHTML = function() {
+			return $('<a />').append(this.eq(0).clone()).html();
+		};
 		$("div:not(#il_EditPage) figure.ilc_media_cont_SvgMediaContainer").each(function() {
+			let caption = "";
+			if (!isEmpty(($(this).find('figcaption div.ilc_media_caption_MediaCaption')))) {
+				let enlarge = $(this).find('figcaption div.ilc_media_caption_MediaCaption a');
+				caption = enlarge.outerHTML();
+				alert(caption);
+				let captionText = $(this).find('figcaption div.ilc_media_caption_MediaCaption').remove(enlarge).text();
+				caption = caption + "<span>" + captionText + "</span>";
+			}
 			$(this).parent().append('<img src="' + $(this).find('embed').attr('src') +
-					'" style="max-width: 100%; margin: 20px 0;">');
+					'" style="max-width: 100%; margin: 20px 0;"><div class="">'+caption+'</div>');
 			$(this).hide();
 		});
     });
+
 </script>
 </body>
 </html>

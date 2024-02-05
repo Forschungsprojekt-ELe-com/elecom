@@ -215,13 +215,14 @@
 				let enlarge = $(this).find('figcaption div.ilc_media_caption_MediaCaption a');
 				caption = enlarge.outerHTML();
 				let captionText = $(this).find('figcaption div.ilc_media_caption_MediaCaption').remove(enlarge).text();
+				caption = '<div className="ilc_media_caption_MediaCaption">' + enlarge.outerHTML();
 				if (captionText.length) {
-					caption += "<span class='ilc_media_caption_MediaCaption'>" + captionText + "</span>";
+					caption += "<span>" + captionText + "</span>";
 				}
-
+				caption += "</div>";
 			}
 			$(this).parent().append('<img src="' + $(this).find('embed').attr('src') +
-					'" style="max-width: 100%; margin: 20px 0;"><div class="">'+caption+'</div>');
+					'" style="max-width: 100%; margin: 20px 0;" />' + caption);
 			$(this).hide();
 		});
     });

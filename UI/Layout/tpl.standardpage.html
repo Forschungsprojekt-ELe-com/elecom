@@ -214,7 +214,6 @@
 			if (!isEmpty(($(this).find('figcaption div.ilc_media_caption_MediaCaption')))) {
 				let enlarge = $(this).find('figcaption div.ilc_media_caption_MediaCaption a');
 				caption = enlarge.outerHTML();
-				alert(caption);
 				let captionText = $(this).find('figcaption div.ilc_media_caption_MediaCaption').remove(enlarge).text();
 				caption = caption + "<span>" + captionText + "</span>";
 			}

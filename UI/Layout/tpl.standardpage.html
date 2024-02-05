@@ -215,7 +215,7 @@
 				let enlarge = $(this).find('figcaption div.ilc_media_caption_MediaCaption a');
 				caption = enlarge.outerHTML();
 				let captionText = $(this).find('figcaption div.ilc_media_caption_MediaCaption').remove(enlarge).text();
-				caption = '<div className="ilc_media_caption_MediaCaption">' + enlarge.outerHTML();
+				caption = '<div class="ilc_media_caption_MediaCaption">' + enlarge.outerHTML();
 				if (captionText.length) {
 					caption += "<span>" + captionText + "</span>";
 				}

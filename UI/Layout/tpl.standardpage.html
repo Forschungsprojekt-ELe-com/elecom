@@ -211,18 +211,23 @@
 		};
 		$("div:not(#il_EditPage) figure.ilc_media_cont_SvgMediaContainer").each(function() {
 			let caption = "";
+			let style = "max-width: 100%; margin: 20px 0;";
 			if (!isEmpty(($(this).find('figcaption div.ilc_media_caption_MediaCaption')))) {
 				let enlarge = $(this).find('figcaption div.ilc_media_caption_MediaCaption a');
 				caption = enlarge.outerHTML();
 				let captionText = $(this).find('figcaption div.ilc_media_caption_MediaCaption').remove(enlarge).text();
-				caption = '<div class="ilc_media_caption_MediaCaption">' + enlarge.outerHTML();
+				caption = '<div class="ilc_media_caption_MediaCaption" style="margin-bottom: 20px;">' +
+						enlarge.outerHTML();
 				if (captionText.length) {
 					caption += "<span>" + captionText + "</span>";
 				}
 				caption += "</div>";
+				style += "margin: 0;";
+			} else {
+				style += "margin: 20px 0;";
 			}
 			$(this).parent().append('<img src="' + $(this).find('embed').attr('src') +
-					'" style="max-width: 100%; margin: 20px 0;" />' + caption);
+					'" style="' + style + '" />' + caption);
 			$(this).hide();
 		});
     });

@@ -19,3 +19,4 @@
 * 23.06.2023: Auto SkinCompiler mit delos v7.23, Template Version 10
 * 13.10.2023: Kompiliert mit delos 7.25. und node_modules/Bootstrap angepasst
 * 05.02.2024: Kompiliert mit delos 7.27. SkinHack SVGs.
+* 08.02.2024: Scrollback.

@@ -80,6 +80,14 @@
 		<!-- END pagefooter -->
 	</main>
 </div>
+<a id="scrollback" href="#">
+	<!--<span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span>-->
+	<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+</a>
+<a id="scrollback_resp" href="#">
+	<!--<span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span>-->
+	<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+</a>
 <script>
     
     if ($('.il-maincontrols img[alt*="Administration"]').length) {
@@ -229,6 +237,32 @@
 			$(this).parent().append('<img src="' + $(this).find('embed').attr('src') +
 					'" style="' + style + '" />' + caption);
 			$(this).hide();
+		});
+		$('#scrollback').click(function (event) {
+			event.preventDefault();
+			$('main.il-layout-page-content').animate({scrollTop: 0}, 600);
+			return false;
+		});
+		$('main').scroll(function () {
+			if ($('main').scrollTop() > 500) {
+				$("#scrollback").show();
+			} else {
+				$("#scrollback").hide();
+			}
+		});
+		$('#scrollback_resp').click(function (event) {
+			event.preventDefault();
+			$('html').animate({scrollTop: 0}, 600);
+			return false;
+		});
+		$(function(){
+			$(window).scroll(function(){
+				if ($('html').scrollTop() > 100) {
+					$("#scrollback_resp").show();
+				} else {
+					$("#scrollback_resp").hide();
+				}
+			});
 		});
     });
 

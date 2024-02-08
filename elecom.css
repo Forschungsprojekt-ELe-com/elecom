@@ -23387,3 +23387,58 @@ p.maxlist-more a:hover {
 .il-card .caption {
   hyphens: manual;
 }
+#scrollback {
+  display: none;
+  background-color: black;
+  bottom: 35px;
+  border-radius: 50px;
+  position: fixed;
+  right: 35px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in 0s;
+  transition: background-color 0.2s ease-in 0s;
+  z-index: 100;
+}
+#scrollback .glyphicon {
+  font-size: 40px;
+  color: yellow;
+  padding: 10px;
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+  #scrollback {
+    display: none!important;
+  }
+}
+#scrollback:hover {
+  background-color: lightgrey;
+  color: black;
+}
+#scrollback_resp {
+  display: none;
+  background-color: black;
+  bottom: 35px;
+  border-radius: 50px;
+  position: fixed;
+  right: 35px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in 0s;
+  transition: background-color 0.2s ease-in 0s;
+  z-index: 100;
+}
+#scrollback_resp .glyphicon {
+  font-size: 40px;
+  color: yellow;
+  padding: 10px;
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+  #scrollback_resp {
+    bottom: 85px;
+    right: 25px;
+  }
+}
+#scrollback_resp:hover {
+  background-color: lightgrey;
+  color: black;
+}

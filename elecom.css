@@ -19821,6 +19821,11 @@ div.ilc_Page.readonly textarea[disabled] {
 .ilc_question_SingleChoice .ilc_qanswer_Answer > div {
   vertical-align: top;
 }
+.ilc_question_MatchingQuestion #sourceArea {
+  height: fit-content;
+  position: sticky;
+  top: 40px;
+}
 #tst_output {
   display: flex;
 }
@@ -23077,7 +23082,7 @@ div.il_HeaderInner {
 .ilc_section_ElecomBlockWrapper div.col-lg-4 .flex-col > div[style*="100%"] {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .il_editarea div.ilc_section_TitelAllgemein,
 .il_editarea_active div.ilc_section_TitelAllgemein,

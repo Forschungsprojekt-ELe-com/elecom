@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{META_CONTENT_LANGUAGE}" dir="{LANGUAGE_DIRECTION}" class="ilc_Fullscreen">
+<head>
+	<title>{WINDOW_TITLE} {PAGETITLE}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="{LOCATION_STYLESHEET}" />
+	<!-- BEGIN ContentStyle -->
+	<link rel="stylesheet" type="text/css" href="{LOCATION_CONTENT_STYLESHEET}" />
+	<!-- END ContentStyle -->
+	<!-- BEGIN js_file -->
+	<script type="text/javascript" src="{JS_FILE}"></script>
+	<!-- END js_file -->
+	<!-- BEGIN css_file -->
+	<link rel="stylesheet" type="text/css" href="{CSS_FILE}" media="{CSS_MEDIA}" />
+	<!-- END css_file -->
+</head><!-- BEGIN tree_icons --><!-- END tree_icons -->
+<body class="ilc_Fullscreen">
+{INLINE_JS}
+<table class = "ilc_Fullscreen"><tr><td valign="middle">
+<!-- BEGIN ilMedia -->
+{MEDIA_CONTENT}
+<!-- END ilMedia -->
+</td></tr></table>
+<script type="text/javascript">
+	$(document).ready(function() {
+		function isEmpty( el ){
+			return !$.trim(el.html())
+		}
+		$.fn.outerHTML = function() {
+			return $('<a />').append(this.eq(0).clone()).html();
+		};
+		$("figure.ilc_media_cont_SvgMediaContainer").each(function() {
+			let caption = "";
+			let style = "max-width: 100%; margin: 20px 0;";
+			if (!isEmpty(($(this).find('figcaption div.ilc_media_caption_MediaCaption')))) {
+				let enlarge = $(this).find('figcaption div.ilc_media_caption_MediaCaption a');
+				caption = enlarge.outerHTML();
+				let captionText = $(this).find('figcaption div.ilc_media_caption_MediaCaption').remove(enlarge).text();
+				caption = '<div class="ilc_media_caption_MediaCaption" style="margin-bottom: 20px;">' +
+						enlarge.outerHTML();
+				if (captionText.length) {
+					caption += "<span>" + captionText + "</span>";
+				}
+				caption += "</div>";
+				style += "margin: 0;";
+			} else {
+				style += "margin: 20px 0;";
+			}
+			$(this).parent().append('<img src="' + $(this).find('embed').attr('src') +
+					'" style="' + style + '" />' + caption);
+			$(this).hide();
+		});
+	});
+</script>
+</body>
+</html>

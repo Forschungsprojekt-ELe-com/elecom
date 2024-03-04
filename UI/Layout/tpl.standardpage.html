@@ -228,7 +228,7 @@
 			} else {
 				style += "margin: 20px 0;";
 			}
-			$(this).parent().append('<img src="' + $(this).find('embed').attr('src') +
+			$(this).parent().append('<img class="new" src="' + $(this).find('embed').attr('src') +
 					'" style="' + style + '" />' + caption);
 			$(this).hide();
 		});
@@ -256,6 +256,22 @@
 				} else {
 					$("#scrollback_resp").hide();
 				}
+			});
+		});
+		$("img.new").one("load", function() {
+			$(this).parent().find("div.ilc_media_caption_MediaCaption").css({
+				'max-width': ($(this).width() + "px")
+			});
+		}).each(function() {
+			if (this.complete) {
+				$(this).trigger('load');
+			}
+		});
+		$(window).resize(function(){
+			$("img.new").each(function() {
+				$(this).parent().find("div.ilc_media_caption_MediaCaption").css({
+					'max-width': ($(this).width() + "px")
+				});
 			});
 		});
     });

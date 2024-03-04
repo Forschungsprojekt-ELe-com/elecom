@@ -23404,7 +23404,7 @@ p.maxlist-more a:hover {
   background-image: url("images/icon-pfeil-grey.png");
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 10000;
+  z-index: 1040;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }

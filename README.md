@@ -21,3 +21,4 @@
 * 05.02.2024: Kompiliert mit delos 7.27. SkinHack SVGs.
 * 08.02.2024: Scrollback.
 * 04.03.2024: Anpassungen TUD.
+* 26.03.2024: Kompiliert mit delos 7.29.

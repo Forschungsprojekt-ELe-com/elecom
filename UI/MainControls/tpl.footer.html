@@ -20,17 +20,17 @@
 	<!-- END footer_modals -->
 </div>
 <script>
-    il.Util.addOnLoad(function() {
-        if ($("#current_perma_link").length) {
-            var input_size = Math.min(Math.floor((screen.width - 37) / 6) - 1, $("#current_perma_link").val().length);
-            $("#current_perma_link").attr("size", input_size);
-        }
-    });
-    function selectPermalink() {
-        var pl = $("#current_perma_link");
-        pl.attr("readOnly", false);
-        pl.focus().select();
-        document.execCommand('copy');
-        pl.attr("readOnly", true);
-    }
+	il.Util.addOnLoad(function() {
+		if ($("#current_perma_link").length) {
+			var input_size = Math.min(Math.floor((screen.width - 37) / 6) - 1, $("#current_perma_link").val().length);
+			$("#current_perma_link").attr("size", input_size);
+		}
+	});
+	function selectPermalink() {
+		var pl = $("#current_perma_link");
+		pl.attr("readOnly", false);
+		pl.focus().select();
+		document.execCommand('copy');
+		pl.attr("readOnly", true);
+	}
 </script>

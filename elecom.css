@@ -23452,3 +23452,44 @@ div.ilc_media_caption_MediaCaption > a img {
 div.ilc_media_caption_MediaCaption > a:hover img {
   background-image: url("images/icon-zoom-darkblue.png");
 }
+footer {
+  background-color: #ecf0f2;
+}
+footer .il-footer-permanent-url {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  width: fit-content;
+  margin: 0 auto;
+}
+footer .il-footer-permanent-url:hover {
+  transition-duration: 0.1s;
+}
+footer .il-footer-permanent-url:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 30px #4c6586;
+}
+footer .il-footer-permanent-url:active {
+  top: 1px;
+}
+footer .il-footer-permanent-url:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}

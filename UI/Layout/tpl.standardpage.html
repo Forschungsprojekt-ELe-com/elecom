@@ -116,7 +116,7 @@
             $(this).attr("title", $(this).find("a").text());
         });
         $("div.il-maincontrols-mainbar button.btn-bulky img[src$='icon_fav.svg']").closest("button").addClass("favorite");
-        $('.h5p-iframe').contents().find("head").append($('<link rel="stylesheet" type="text/css" href="./Customizing/global/skin/elecom/elecom.css">'));
+        $('.h5p-iframe').contents().find("head").append($('<link rel="stylesheet" type="text/css" href="./Customizing/global/skin/elecom/elecom.css?v='+ Date.now() +'">'));
         /*if ($(".ilc_section_TitelIconAllgemeinAudio").length) {
             $("#headerimage").addClass("Override Allgemein Audio");
         }

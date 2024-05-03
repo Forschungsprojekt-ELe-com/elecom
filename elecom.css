@@ -23497,6 +23497,9 @@ input[type="radio"].h5p-simple-multiple-choice-alternative-input {
   vertical-align: middle;
   margin: 0 3px 2px 5px;
 }
+.h5p-simple-multiple-choice-question {
+  background: #0164f4;
+}
 .h5p-questionnaire-footer {
   background: #0164f4;
   border: 1px solid #0164f4;

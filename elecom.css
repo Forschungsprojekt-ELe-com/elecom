@@ -23507,3 +23507,6 @@ input[type="radio"].h5p-simple-multiple-choice-alternative-input {
   background: #0164f4;
   border: 1px solid #0164f4;
 }
+.h5p-questionnaire-choice-required-exit {
+  top: 0;
+}

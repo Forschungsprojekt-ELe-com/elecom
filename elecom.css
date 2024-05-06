@@ -23444,10 +23444,10 @@ div.ilc_media_caption_MediaCaption > a {
 div.ilc_media_caption_MediaCaption > a img {
   width: 0;
   height: 0;
-  padding: 60px 100px 0 0;
+  padding: 100% 100px 0 0;
   background-image: url("images/icon-zoom-grey.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 div.ilc_media_caption_MediaCaption > a:hover img {
   background-image: url("images/icon-zoom-darkblue.png");

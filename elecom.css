@@ -23510,3 +23510,7 @@ input[type="radio"].h5p-simple-multiple-choice-alternative-input {
 .h5p-questionnaire-choice-required-exit {
   top: 0;
 }
+.login .ilFormHeader,
+.login .ilFormFooter {
+  background-color: #fff;
+}

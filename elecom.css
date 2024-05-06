@@ -23517,3 +23517,8 @@ input[type="radio"].h5p-simple-multiple-choice-alternative-input {
 .h5p-interactive-video .h5p-splash-wrapper .h5p-splash .h5p-splash-description {
   font-size: 24px;
 }
+@media only screen and (max-width: 768px) {
+  .il-layout-page .nav.il-maincontrols .il-maincontrols-mainbar .il-mainbar {
+    padding-left: 74px;
+  }
+}

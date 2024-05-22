@@ -94,6 +94,9 @@
             $("div.il_HeaderInner").hide();
             $("div.alert.alert-success").hide();
         }
+		if ($(".ilc_section_ResetLenaBubble").length) {
+			localStorage.setItem("thusSpokeLENA", false);
+        }
 	}
 	il.Util.addOnLoad(function() {
 <!-- BEGIN on_load_code -->

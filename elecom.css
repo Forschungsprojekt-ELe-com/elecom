@@ -23212,6 +23212,29 @@ div.il_HeaderInner {
   border: 1px solid #555;
   padding: 5px;
 }
+.il_editarea div.ilc_section_ResetLenaBubble,
+.il_editarea_active div.ilc_section_ResetLenaBubble,
+.il_editarea_disabled div.ilc_section_ResetLenaBubble,
+.il_editarea_disabled_selected div.ilc_section_ResetLenaBubble {
+  padding: 10px;
+  width: 100%;
+  background-color: #c6f4c6;
+  min-height: 150px;
+}
+.il_editarea div.ilc_section_ResetLenaBubble:before,
+.il_editarea_active div.ilc_section_ResetLenaBubble:before,
+.il_editarea_disabled div.ilc_section_ResetLenaBubble:before,
+.il_editarea_disabled_selected div.ilc_section_ResetLenaBubble:before {
+  content: "Unsichtbar. Steuert den Reset von LENAs Sprechblasen";
+}
+.il_editarea div.ilc_section_ResetLenaBubble:after,
+.il_editarea_active div.ilc_section_ResetLenaBubble:after,
+.il_editarea_disabled div.ilc_section_ResetLenaBubble:after,
+.il_editarea_disabled_selected div.ilc_section_ResetLenaBubble:after {
+  content: "ResetLenaBubble";
+  border: 1px solid #555;
+  padding: 5px;
+}
 div.il_editarea_disabled,
 div.il_editarea_disabled_selected {
   border-width: 5px;

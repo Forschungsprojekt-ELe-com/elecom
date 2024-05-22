@@ -23225,7 +23225,7 @@ div.il_HeaderInner {
 .il_editarea_active div.ilc_section_ResetLenaBubble:before,
 .il_editarea_disabled div.ilc_section_ResetLenaBubble:before,
 .il_editarea_disabled_selected div.ilc_section_ResetLenaBubble:before {
-  content: "Unsichtbar. Steuert den Reset von LENAs Sprechblasen";
+  content: "Unsichtbar. Steuert Reset von LENAs Sprechblasen";
 }
 .il_editarea div.ilc_section_ResetLenaBubble:after,
 .il_editarea_active div.ilc_section_ResetLenaBubble:after,

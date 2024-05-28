@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<template xmlns="http://www.w3.org" responsible="Jean-Luc Braun" mail="braun@qualitus.de" ilias="v7.29" version="18"
-          name="elecom - ILIAS v7.29 - Skin v18">
+<template xmlns="http://www.w3.org"
+          responsible="Jean-Luc Braun"
+          mail="braun@qualitus.de"
+          ilias="v7.30"
+          version="19"
+          name="elecom - ILIAS v7.30 - Skin v19">
   <style id="elecom" name="Ele-com" image_directory="images" />
 </template>

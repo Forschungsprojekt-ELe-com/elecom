@@ -239,6 +239,10 @@
 					'" style="' + style + '" />' + caption);
 			$(this).hide();
 		});
+		if ($("#lena_teaser.UC-4").length) {
+			//$(".ilc_section_ElecomBlockWrapper").append($("#back_to_course"));
+			$(".il-mainbar-entries").append($("#back_to_course"));
+		}
 		$('#scrollback').click(function (event) {
 			event.preventDefault();
 			$('main.il-layout-page-content').animate({scrollTop: 0}, 600);

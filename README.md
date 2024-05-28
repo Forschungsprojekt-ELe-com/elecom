@@ -22,3 +22,4 @@
 * 08.02.2024: Scrollback.
 * 04.03.2024: Anpassungen TUD.
 * 26.03.2024: Kompiliert mit delos 7.29.
+* 26.05.2024: UC4. Kompiliert mit delos 7.30.

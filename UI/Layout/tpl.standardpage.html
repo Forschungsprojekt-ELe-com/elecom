@@ -250,60 +250,18 @@
 			if ($('main').scrollTop() > 500) {
 				$("#scrollback").show();
 
-				if ($('main').scrollTop() > 650) {
+				/*if ($('main').scrollTop() > 650) {
 					if (!$("#lena_teaser").hasClass("scrolled")) {
 						$("#lena_teaser").addClass("scrolled");
 					}
 					//putLenaInTheMenu();
-				}
+				}*/
 			} else {
 				$("#scrollback").hide();
-				$("#lena_teaser").removeClass("scrolled");
-				/*putLenaBackToContent();*/
+				//$("#lena_teaser").removeClass("scrolled");
 			}
 		});
-		function putLenaBackToContent(){
-			$("#lena_teaser").animate({
-				opacity: 0.25,
-				left: "-=50",
-				height: "toggle"
-			}, 1000, function() {
-				$("#lena_teaser").css(
-						{	position: "sticky",
-							top: "0",
-							height: "150px",
-							width: "150px",
-							"bottom": "auto"
-						});
-				$("#lena_teaser").animate({
-					opacity: 1,
-					left: "0",
-					height: "toggle"
-				});
-			});
-			$('main').unbind('scroll');
-		}
-		function putLenaInTheMenu(){
-			$("#lena_teaser").animate({
-				opacity: 0.25,
-				left: "+=50",
-				height: "toggle"
-			}, 1000, function() {
-				$("#lena_teaser").css(
-						{	position: "fixed",
-							top: "auto",
-							height: "100px",
-							width: "100px",
-							"bottom": "160px"
-						});
-				$("#lena_teaser").animate({
-					opacity: 1,
-					left: "0",
-					height: "toggle"
-				});
-			});
-			$('main').unbind('scroll');
-		}
+
 		$('#scrollback_resp').click(function (event) {
 			event.preventDefault();
 			$('html').animate({scrollTop: 0}, 600);

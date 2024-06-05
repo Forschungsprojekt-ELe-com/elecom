@@ -23545,3 +23545,6 @@ input[type="radio"].h5p-simple-multiple-choice-alternative-input {
     padding-left: 74px;
   }
 }
+.ilc_Fullscreen figure + img {
+  max-width: none !important;
+}

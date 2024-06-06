@@ -239,6 +239,8 @@
 		});
 		if ($("#lena_teaser.UC-4").length) {
 			//$(".ilc_section_ElecomBlockWrapper").append($("#back_to_course"));
+			localStorage.setItem("thusSpokeLENA", "true");
+			$("#quLenaPluginWrapper").hide();
 			$(".il-mainbar-entries").append($("#back_to_course"));
 		}
 		$('#scrollback').click(function (event) {

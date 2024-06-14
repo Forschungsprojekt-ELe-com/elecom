@@ -1,7 +1,7 @@
 <!-- BEGIN footer_perm_url -->
-<div class="il-footer-permanent-url" onclick="selectPermalink();">
-	{PERMA_LINK_LABEL} <span class="glyphicon glyphicon-link"></span>
-	<input id="current_perma_link" type="text" value="{PERMANENT_URL}" readonly="readOnly">
+<div class="il-footer-permanent-url">
+	<div class="pulseButton" style="width: fit-content;margin: auto;" onclick="selectPermalink();">{PERMANENT} <span class="glyphicon glyphicon-link"></span></div>
+	<input id="current_perma_link" type="text" value="{PERMANENT_URL}" readonly="readonly" />
 </div>
 <!-- END footer_perm_url -->
 <div class="il-maincontrols-footer">
@@ -19,18 +19,21 @@
 	<div class="il-footer-modals">{MODALS}</div>
 	<!-- END footer_modals -->
 </div>
+<script src="./Customizing/global/skin/elecom/js/jquery.min.js"></script>
 <script>
-	il.Util.addOnLoad(function() {
+	$(document).ready(function() {
 		if ($("#current_perma_link").length) {
+			let href = $(".il-footer-permanent-url .pulseButton > a").attr("href");
+			$("#current_perma_link").val(href);
 			var input_size = Math.min(Math.floor((screen.width - 37) / 6) - 1, $("#current_perma_link").val().length);
 			$("#current_perma_link").attr("size", input_size);
 		}
 	});
 	function selectPermalink() {
-		var pl = $("#current_perma_link");
-		pl.attr("readOnly", false);
+		let pl = $("#current_perma_link");
+		pl.attr("readonly", false);
 		pl.focus().select();
 		document.execCommand('copy');
-		pl.attr("readOnly", true);
+		pl.attr("readonly", true);
 	}
 </script>

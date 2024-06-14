@@ -12,11 +12,10 @@
 		<!-- BEGIN agreement -->{USER_AGREEMENT}<!-- END agreement -->
 	</p>
 </div>
+<script src="./Customizing/global/skin/elecom/js/jquery.min.js"></script>
 <script>
-/*if (document.formlogin.username && document.formlogin.password) {
-	   if(document.formlogin.username.value!="") document.formlogin.password.focus();
-	   else document.formlogin.username.focus();
-   }*/
-
-$("html").addClass("login");
+	$(document).ready(function() {
+		$("html").addClass("login");
+	});
 </script>
+

@@ -14,27 +14,19 @@
 	<meta name="msapplication-TileColor" content="#0f3f75">
 	<meta name="msapplication-config" content="./Customizing/global/skin/elecom/images/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-	
-	<!-- BEGIN base -->
+
 	<base href="{BASE}" />
-	<!-- END base -->
-	
-	<title>{SHORT_TITLE}: {VIEW_TITLE}</title>
-	
+
+	<title>{VIEW_TITLE}: {SHORT_TITLE}</title>
+
 	<style>
-        {CSS_INLINE}
+		{CSS_INLINE}
 	</style>
-	
-	
+
 	<!-- BEGIN css_file -->
 	<link rel="stylesheet" type="text/css" href="{CSS_FILE}" />
 	<!-- END css_file -->
-	
-	<!-- BEGIN js_file -->
-	<script src="{JS_FILE}"></script>
-	<!-- END js_file -->
-	<script src="./Customizing/global/skin/elecom/Services/js/jqHeaderSlider.js"></script>
-	<script src="./Customizing/global/skin/elecom/Services/js/hideMaxListItem.js"></script>
+
 	<!-- BEGIN meta_datum -->
 	<meta name="{META_KEY}" content="{META_VALUE}" />
 	<!-- END meta_datum -->
@@ -42,37 +34,35 @@
 </head>
 
 <body>
-<div class="il-layout-page<!-- BEGIN slates_engaged --> with-mainbar-slates-engaged<!-- END slates_engaged -->">
-	<header>
-		<div class="header-inner">
-			<div class="il-logo">
-				{LOGO}
-				<div class="il-pagetitle">
-					{TITLE}
-				</div>
-			</div>
-			
-			<!-- BEGIN header_locator -->
-			<nav class="il-header-locator">{HEADER_BREADCRUMBS}</nav>
-			<!-- END header_locator -->
-			{METABAR}
+<!-- BEGIN mode_info -->{MODEINFO}<!-- END mode_info -->
+<div class="il-page-overlay">{OVERLAY}</div>
+<div class="il-layout-page<!-- BEGIN slates_engaged --> with-mainbar-slates-engaged<!-- END slates_engaged -->"<!-- BEGIN with_id --> id="{ID}"<!-- END with_id -->>
+<header>
+	<div class="header-inner">
+		<div class="il-logo">
+			{LOGO}
+			<div class="il-pagetitle">{TITLE}</div>
 		</div>
-	</header>
-	
-	
-	<div class="il-system-infos">{SYSTEMINFOS}</div>
-	
-	<div class="nav il-maincontrols">{MAINBAR}</div>
-	
-	<!-- html5 main-tag is not supported in IE / div is needed -->
-	<main class="il-layout-page-content">
-		<div class="breadcrumbs">{BREADCRUMBS}</div>
-		<div>
-			<!-- BEGIN mode_info -->{MODEINFO}<!-- END mode_info -->
-			{CONTENT}
+
+		<!-- BEGIN header_locator -->
+		<nav class="il-header-locator">{HEADER_BREADCRUMBS}</nav>
+		<!-- END header_locator -->
+		{METABAR}
+	</div>
+</header>
+
+<div class="il-system-infos">{SYSTEMINFOS}</div>
+
+<div class="nav il-maincontrols">{MAINBAR}</div>
+
+<main class="il-layout-page-content">
+	<!-- BEGIN content_breadcrumbs -->
+	<div class="breadcrumbs">{BREADCRUMBS}</div>
+	<!-- END content_breadcrumbs -->
+	<div class="wrapper">
+		{CONTENT}
 			<img src="./Customizing/global/skin/elecom/images/logoreihe_bmf_bibb.jpg" title="Gefördert vom BMBF und BIBB" alt="Gefördert vom BMBF und BIBB" class="wp-image-24609" width="415" height="130" style="display: block; margin: 0 auto 30px;" />
 		</div>
-		
 		<!-- BEGIN pagefooter -->
 		<footer role="contentinfo">
 			{FOOTER}
@@ -82,6 +72,12 @@
 </div>
 <a id="scrollback" href="#"></a>
 <a id="scrollback_resp" href="#"></a>
+<!-- BEGIN js_file -->
+<script src="{JS_FILE}"></script>
+<!-- END js_file -->
+
+<script src="./Customizing/global/skin/elecom/Services/js/jqHeaderSlider.js"></script>
+<script src="./Customizing/global/skin/elecom/Services/js/hideMaxListItem.js"></script>
 <script>
     
     if ($('.il-maincontrols img[alt*="Administration"]').length) {
@@ -117,6 +113,12 @@
             $(this).attr("title", $(this).find("a").text());
         });
         $("div.il-maincontrols-mainbar button.btn-bulky img[src$='icon_fav.svg']").closest("button").addClass("favorite");
+		$(".il-maincontrols-metabar .btn-bulky img[src*='UserTakeOver']").closest("button").addClass("userto");
+		$('.custom-map input[type="text"]').each(function() {
+			if ($(this).attr("value") == 0) {
+				$(this).attr("value", "");
+			}
+		});
         $('.h5p-iframe').contents().find("head").append($('<link rel="stylesheet" type="text/css" href="./Customizing/global/skin/elecom/elecom.css?v='+ Date.now() +'">'));
         /*if ($(".ilc_section_TitelIconAllgemeinAudio").length) {
             $("#headerimage").addClass("Override Allgemein Audio");

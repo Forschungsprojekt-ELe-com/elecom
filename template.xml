@@ -2,8 +2,8 @@
 <template xmlns="http://www.w3.org"
           responsible="Jean-Luc Braun"
           mail="braun@qualitus.de"
-          ilias="v7.30"
-          version="20"
-          name="elecom - ILIAS v7.30 - Skin v20">
+          ilias="v8.12"
+          version="21"
+          name="elecom - ILIAS v8.12">
   <style id="elecom" name="Ele-com" image_directory="images" />
 </template>

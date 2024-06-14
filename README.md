@@ -23,3 +23,4 @@
 * 04.03.2024: Anpassungen TUD.
 * 26.03.2024: Kompiliert mit delos 7.29.
 * 26.05.2024: UC4. Kompiliert mit delos 7.30.
+* 14.06.2024: UIpdate. Kompiliert mit delos 8.12.

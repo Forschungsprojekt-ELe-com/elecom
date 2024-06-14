@@ -1,6 +1,6 @@
 <!-- BEGIN header -->
 <div class="il_Header">
-	<h1><!-- BEGIN img_headline --><img src="{IMG_PAGEHEADLINE}" /> <!-- END img_headline -->{TXT_PAGEHEADLINE}</h1>
+	<h1><!-- BEGIN img_headline -->{IMG_PAGEHEADLINE} <!-- END img_headline -->{TXT_PAGEHEADLINE}</h1>
 </div>
 <!-- END header -->
 
@@ -9,25 +9,25 @@
 	<!-- BEGIN warning -->
 	<img class="ilFailureMessage" alt="{ALT_IMAGE}" title="{ALT_IMAGE}" src="{SRC_IMAGE}" />
 	<div class="ilFailureMessage">
-		<h5 class="ilAccHeadingHidden"><a id="il_message_focus" name="il_message_focus">{MESSAGE_HEADING}</a></h5>
+		<div class="ilAccHeadingHidden"><a id="il_message_focus" name="il_message_focus">{MESSAGE_HEADING}</a></div>
 		{TXT_MSG_LOGIN_FAILED}
 	</div>
 	<!-- END warning -->
 	<!-- BEGIN success -->
 	<img class="ilSuccessMessage" alt="{ALT_IMAGE}" title="{ALT_IMAGE}" src="{SRC_IMAGE}" />
 	<div class="ilSuccessMessage">
-		<h5 class="ilAccHeadingHidden"><a id="il_message_focus" name="il_message_focus">{MESSAGE_HEADING}</a></h5>
+		<div class="ilAccHeadingHidden"><a id="il_message_focus" name="il_message_focus">{MESSAGE_HEADING}</a></div>
 		{TXT_MSG_LOGIN_SUCCESS}
 	</div>
 	<!-- END success -->
 </div>
 
 
-    <!-- BEGIN lang_select -->
-   <!-- <li class="dropdown"><a id="mm_lang_sel" href="#" class="dropdown-toggle" data-toggle="dropdown">{TXT_LANGSELECT} <span class="caret"></span></a>
-        {LANG_SELECT}
-    </li>-->
-    <!-- END lang_select -->
+<!-- BEGIN lang_select -->
+<!-- <li class="dropdown"><a id="mm_lang_sel" href="#" class="dropdown-toggle" data-toggle="dropdown">{TXT_LANGSELECT} <span class="caret"></span></a>
+     {LANG_SELECT}
+ </li>-->
+<!-- END lang_select -->
 
 
 {STARTUP_CONTENT}
@@ -41,9 +41,9 @@
 
 {PRMLINK}
 {SCRIPT}
-
+<script src="./Customizing/global/skin/elecom/js/jquery.min.js"></script>
 <script>
-    $("html").addClass("outside");
-    //$("span.glyphicon-question-sign").closest("button").remove();
+	$(document).ready(function() {
+		$("html").addClass("outside");
+	});
 </script>
-

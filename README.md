@@ -1,4 +1,4 @@
-# **Ilias 7.x Design für Ele-com** 
+# **Ilias 8.x Design für Ele-com** 
 
 ### **Installation**
 
@@ -23,4 +23,5 @@
 * 04.03.2024: Anpassungen TUD.
 * 26.03.2024: Kompiliert mit delos 7.29.
 * 26.05.2024: UC4. Kompiliert mit delos 7.30.
-* 14.06.2024: UIpdate. Kompiliert mit delos 8.12.
+* 14.06.2024: Update. Kompiliert mit delos 8.12.
+* 20.06.2024: Korrektur nach Designcheck (Alex T.)

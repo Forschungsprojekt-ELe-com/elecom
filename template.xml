@@ -3,7 +3,9 @@
           responsible="Jean-Luc Braun"
           mail="braun@qualitus.de"
           ilias="v8.12"
-          version="21"
+          version="22"
           name="elecom - ILIAS v8.12">
-  <style id="elecom" name="Ele-com" image_directory="images" />
+  <style id="elecom"
+         name="Ele-com"
+         image_directory="images" />
 </template>

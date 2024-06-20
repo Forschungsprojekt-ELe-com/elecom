@@ -24252,7 +24252,7 @@ input[type="radio"].h5p-simple-multiple-choice-alternative-input {
     padding-left: 74px;
   }
 }
-.ilToolbar.navbar ul.ilToolbarItems.navbar-nav > li .navbar-form,
-.ilToolbar.navbar ul.ilToolbarItems.navbar-nav > li .navbar-text {
-  display: inline-block;
+.ilToolbar .il-toggle-button {
+  bottom: unset;
+  vertical-align: middle;
 }

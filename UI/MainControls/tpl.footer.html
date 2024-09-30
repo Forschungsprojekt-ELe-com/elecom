@@ -33,7 +33,6 @@
 		var input = document.getElementById('current_perma_link');
 		var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
 		if (isiOSDevice) {
-			console.log("was there");
 			input.contentEditable = true;
 			input.readOnly = false;
 			var range = document.createRange();
@@ -46,7 +45,6 @@
 			input.readOnly = true;
 			document.execCommand('copy');
 		} else {
-			console.log("was here");
 			input.select();
 			input.setSelectionRange(0, 99999);
 			navigator.clipboard.writeText(input.value);

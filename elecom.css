@@ -23754,6 +23754,9 @@ fieldset.ilTableFilter table.ilTableFilter > tbody > tr div.input-group.date + b
   src: local(''), url('fonts/Poppins/poppins-v20-latin-ext_latin-900italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('fonts/Poppins/poppins-v20-latin-ext_latin-900italic.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+body {
+  line-height: unset;
+}
 .il-system-info.il-system-info-neutral {
   background-color: #67c2f8;
   color: white;

@@ -82,15 +82,7 @@
 	document.addEventListener("DOMContentLoaded", function () {
 		if ($('.il-maincontrols img.icon.adm').length) {
 			$("html").addClass("admin");
-		} else {
-			if ($(".ilc_section_HideTabForUser").length) {
-				$("#ilTab").hide();
-			}
-			if ($(".ilc_section_HideTitleForCoPage").length) {
-				$("div.il_HeaderInner").hide();
-				$("div.alert.alert-success").hide();
-			}
-		}
+		} 
 	}, false);
 
 	il.Util.addOnLoad(function() {
@@ -300,6 +292,18 @@
 		if ($(".ilc_section_ResetLenaBubble").length) {
 			localStorage.setItem("thusSpokeLENA", "false");
 		}
+
+
+		if (!$('html.admin').length) {
+			if ($(".ilc_section_HideTabForUser").length) {
+				$("#ilTab").hide();
+			}
+			if ($(".ilc_section_HideTitleForCoPage").length) {
+				$("div.il_HeaderInner").hide();
+				$("div.alert.alert-success").hide();
+			}
+		}
+
     });
 
 </script>

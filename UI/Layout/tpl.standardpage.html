@@ -80,18 +80,7 @@
 <script src="./Customizing/global/skin/elecom/Services/js/hideMaxListItem.js"></script>
 <script>
     
-    if ($('.il-maincontrols img.icon.adm').length) {
-        $("html").addClass("admin");
-    } else {
-        if ($(".ilc_section_HideTabForUser").length) {
-            $("#ilTab").hide();
-        }
-        if ($(".ilc_section_HideTitleForCoPage").length) {
-            $("div.il_HeaderInner").hide();
-            $("div.alert.alert-success").hide();
-        }
 
-	}
 	il.Util.addOnLoad(function() {
 <!-- BEGIN on_load_code -->
     <!-- BEGIN on_load_code_inner -->
@@ -109,6 +98,18 @@
                 }
             });
         }*/
+		if ($('.il-maincontrols img.icon.adm').length) {
+			$("html").addClass("admin");
+		} else {
+			if ($(".ilc_section_HideTabForUser").length) {
+				$("#ilTab").hide();
+			}
+			if ($(".ilc_section_HideTitleForCoPage").length) {
+				$("div.il_HeaderInner").hide();
+				$("div.alert.alert-success").hide();
+			}
+
+		}
         $(".breadcrumbs .crumb").each(function() {
             $(this).attr("title", $(this).find("a").text());
         });

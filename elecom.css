@@ -24460,3 +24460,8 @@ input[type="radio"].h5p-simple-multiple-choice-alternative-input {
   bottom: unset;
   vertical-align: middle;
 }
+.admin #ilTab,
+.admin div.il_HeaderInner,
+.admin div.alert.alert-success {
+  display: block !important;
+}

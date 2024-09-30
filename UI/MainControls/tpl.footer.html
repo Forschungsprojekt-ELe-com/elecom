@@ -19,21 +19,35 @@
 	<div class="il-footer-modals">{MODALS}</div>
 	<!-- END footer_modals -->
 </div>
-<script src="./Customizing/global/skin/elecom/js/jquery.min.js"></script>
+
 <script>
-	$(document).ready(function() {
+	document.addEventListener("DOMContentLoaded", function () {
 		if ($("#current_perma_link").length) {
 			let href = $(".il-footer-permanent-url .pulseButton > a").attr("href");
 			$("#current_perma_link").val(href);
 			var input_size = Math.min(Math.floor((screen.width - 37) / 6) - 1, $("#current_perma_link").val().length);
 			$("#current_perma_link").attr("size", input_size);
 		}
-	});
+	}, false);
 	function selectPermalink() {
-		let pl = $("#current_perma_link");
-		pl.attr("readonly", false);
-		pl.focus().select();
-		document.execCommand('copy');
-		pl.attr("readonly", true);
+		var input = document.getElementById('current_perma_link');
+		var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
+		if (isiOSDevice) {
+			input.contentEditable = true;
+			input.readOnly = false;
+			var range = document.createRange();
+			range.selectNodeContents(input);
+			var selection = window.getSelection();
+			selection.removeAllRanges();
+			selection.addRange(range);
+			input.setSelectionRange(0, 999999);
+			input.contentEditable = false;
+			input.readOnly = true;
+			document.execCommand('copy');
+		} else {
+			input.select();
+			input.setSelectionRange(0, 99999);
+			navigator.clipboard.writeText(input.value);
+		}
 	}
 </script>

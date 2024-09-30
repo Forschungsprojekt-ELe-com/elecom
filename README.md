@@ -25,3 +25,4 @@
 * 26.05.2024: UC4. Kompiliert mit delos 7.30.
 * 14.06.2024: Update. Kompiliert mit delos 8.12.
 * 20.06.2024: Korrektur nach Designcheck (Alex T.)
+* 30.09.2024: Kompiliert mit delos 8.14.
